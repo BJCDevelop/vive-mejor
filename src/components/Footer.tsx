@@ -11,9 +11,9 @@ export default function Footer() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <footer className="bg-[#DD0B18] absolute w-full">
+    <footer className="bg-[#DD0B18] w-full">
       <nav className="mx-10 flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div className="flex flex-col max-w-lg lg:flex-1 text-white gap-4">
+        <div className="hidden flex-col max-w-lg lg:flex-1 text-white gap-4 xl:flex">
             <h2>Links de interes</h2>
             <div className="grid grid-cols-4">
                 <div className="flex flex-col gap-2">
@@ -43,15 +43,9 @@ export default function Footer() {
             <Link href="/" className="-m-1.5 p-1.5">
                 <Image className="h-8 w-auto" src="/IG.png" alt="Logo" width={50} height={50} />
             </Link>
-        </div>
-
-        <div className="flex flex-row items-center justify-center gap-6">
             <Link href="/" className="-m-1.5 p-1.5">
                 <Image className="w-auto" src="/LIBRO.png" alt="Logo" width={200} height={100} />
             </Link>
-        </div>
-
-        <div className="flex flex-row items-center justify-center gap-6">
             <Link href="/" className="-m-1.5 p-1.5">
                 <Image className="w-auto" src="/fondo-caja.png" alt="Logo" width={400} height={200} />
             </Link>

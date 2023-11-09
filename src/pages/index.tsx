@@ -37,8 +37,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='relative bg-gradient-to-b from-white/0 to-white w-full'>
-          <div className="relative grid grid-cols-2 w-full bg-[url('/curvorojo.png')] bg-cover">
+        {/* <div className='relative bg-gradient-to-b from-white/0 to-white w-full'>
+          <div id="1" className="relative grid grid-cols-2 w-full bg-[url('/curvorojo.png')] bg-cover">
             <div className="flex flex-col h-screen text-white items-center justify-center pl-10">
               <span className="flex flex-row items-center justify-center gap-4">
                 <p className="font-normal text-xl lg:text-3xl">¿Qué es</p>
@@ -53,6 +53,100 @@ export default function Home() {
             </div>
             <div className="flex flex-col h-screen text-white items-center justify-center pl-10">
               <Image src="/mujer.png" alt="Vive Mejor" width={500} height={500} className="rounded-full border-white border-4" />
+            </div>
+          </div>
+        </div> */}
+
+        <div className='relative bg-gradient-to-b from-white/0 to-white w-full'>
+          <div className="carousel w-full bg-[url('/curvorojo.png')] bg-cover">
+            <div id="slide1" className="carousel-item grid grid-cols-2 relative w-full">
+              <div className="flex flex-col h-screen text-white items-center justify-center pl-10">
+                <span className="flex flex-row items-center justify-center gap-4">
+                  <p className="font-normal text-xl lg:text-3xl">¿Qué es</p>
+                </span>
+                <span className="flex flex-col lg:flex-row items-center justify-center">
+                  <Image src="/vivemejor.png" alt="Vive Mejor" width={200} height={100} />
+                  <p className="font-normal text-lg lg:text-3xl">?</p>
+                </span>
+                <span className="flex flex-row items-center justify-center pt-20">
+                  <p className="font-normal text-sm lg:text-md w-80 text-center">Es un crédito que financia el mejoramiento, construcción o ampliación de los puntos por donde recorre el agua.</p>
+                </span>
+              </div>
+              <div className="flex flex-col h-screen text-white items-center justify-center pl-10">
+                <Image src="/mujer.png" alt="Vive Mejor" width={500} height={500} className="rounded-full border-white border-4" />
+              </div>
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" className="btn btn-circle">❮</a> 
+                <a href="#slide2" className="btn btn-circle">❯</a>
+              </div>
+            </div>
+
+            <div id="slide2" className="carousel-item grid grid-cols-1 relative w-full">
+              <div className="flex flex-col h-screen text-white items-center justify-center pl-10 gap-10">
+                <div className="flex flex-row items-center justify-center gap-4 w-full">
+                  <p className="font-normal text-xl lg:text-3xl">¿Qué financia?</p>
+                </div>
+                <div className='flex flex-row w-full text-white items-center justify-center px-10 gap-10'>
+                  <div className="flex flex-col gap-2 items-center justify-center">
+                    <Image src="/G1.png" alt="Gota" width={200} height={50}/>
+                    <p className="pt-6 text-center w-[180px]">Construcción y mejoramiento de baño</p>
+                  </div>
+                  <div className="flex flex-col gap-2 items-center justify-center">
+                    <Image src="/G2.png" alt="Gota" width={200} height={50}/>
+                    <p className="pt-6 text-center w-[180px]">Lavatorio de cocina multiusos</p>
+                  </div>
+                  <div className="flex flex-col gap-2 items-center justify-center">
+                    <Image src="/G3.png" alt="Gota" width={200} height={50}/>
+                    <p className="pt-6 text-center w-[180px]">Tanque elevado</p>
+                  </div>
+                  <div className="flex flex-col gap-2 items-center justify-center">
+                    <Image src="/G4.png" alt="Gota" width={200} height={50}/>
+                    <p className="pt-6 text-center w-[180px]">Instalación de terma</p>
+                  </div>
+                  <div className="flex flex-col gap-2 items-center justify-center">
+                    <Image src="/G5.png" alt="Gota" width={200} height={50}/>
+                    <p className="pt-6 text-center w-[180px]">Conexión de alcantarillado</p>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" className="btn btn-circle">❮</a> 
+                <a href="#slide3" className="btn btn-circle">❯</a>
+              </div>
+            </div>
+
+            <div id="slide3" className="carousel-item grid grid-cols-2 relative w-full">
+              <div className="flex flex-col h-screen text-white items-center justify-center pl-10 gap-4">
+                <div className="flex flex-row items-center justify-center gap-4 pb-6">
+                  <p className="font-normal text-xl lg:text-3xl">Nuestros Beneficios</p>
+                </div>
+                <div className="badge badge-outline py-10 px-10 w-[800px] bg-white/10 text-lg">Destinado a cubrir las necesidades básicas de los servicios de agua potable, alcantarillado e higiene.</div>
+                <div className="badge badge-outline py-10 px-10 w-[800px] bg-white/10 text-lg">Atención rápida y personalizada.</div>
+                <div className="badge badge-outline py-10 px-10 w-[800px] bg-white/10 text-lg">Tasas acorde a la competencia del mercado.</div>
+                <div className="badge badge-outline py-10 px-10 w-[800px] bg-white/10 text-lg">Mejora tu calidad de vida.</div>
+                <div className="badge badge-outline py-10 px-10 w-[800px] bg-white/10 text-lg">Puedes pagar tu crédito sin ir a tiendas a través de YAPE, app de Caja Sullana y Homebanking.</div>
+              </div>
+              <div className="flex flex-col h-screen text-white items-center justify-center pl-10">
+                <Image src="/slide3.png" alt="Vive Mejor" width={500} height={500} className="rounded-full border-white border-4" />
+              </div>
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" className="btn btn-circle">❮</a> 
+                <a href="#slide4" className="btn btn-circle">❯</a>
+              </div>
+            </div>
+
+            <div id="slide4" className="carousel-item grid grid-cols-2 relative w-full">
+              <div className="flex flex-col h-screen text-white items-center justify-center pl-10 gap-10">
+                <p className="font-normal text-xl lg:text-3xl">¿Cómo puedo obtenerlo?</p>
+                <Image src="/mujer.png" alt="Vive Mejor" width={500} height={500} className="rounded-full border-white border-4" />
+              </div>
+              <div className="flex flex-col h-screen text-white items-center justify-center pl-10">
+                <Image src="/mujer.png" alt="Vive Mejor" width={500} height={500} className="rounded-full border-white border-4" />
+              </div>
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" className="btn btn-circle">❮</a> 
+                <a href="#slide1" className="btn btn-circle">❯</a>
+              </div>
             </div>
           </div>
         </div>
@@ -134,45 +228,45 @@ export default function Home() {
             <div className="bg-gray-50 p-4 rounded-lg hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
               <div className="grid grid-cols-2 w-full bg-[#DD0B18] rounded-xl">
                 <div className="flex flex-row border-r-[1px] border-[#00000028]">
-                  <Image src="/colaborador.png" alt="Colaborador" width={200} height={100} />
-                  <div className="flex flex-col items-center justify-center px-10">
+                  <Image src="/colaborador.png" alt="Colaborador" width={400} height={100} />
+                  <div className="flex flex-col items-center justify-between w-full px-10">
                     <h1 className="text-white py-10">Colaborador</h1>
-                    <div className="grid grid-cols-2 gap-6 items-center justify-center">
-                      <div className="flex flex-col text-center p-4 items-center justify-center">
+                    <div className="grid grid-cols-2 gap-4 pb-4 items-center justify-center">
+                      <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/colab1.png" alt="Colab 1" width={50} height={50} />
-                        <p className="text-white pt-2">Boleto o recibo por honorarios</p>
+                        <p className="text-white pt-2 text-[10px] w-[100px]">Boleto o recibo por honorarios</p>
                       </div>
-                      <div className="flex flex-col text-center p-4 items-center justify-center">
+                      <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/colab2.png" alt="Colab 1" width={50} height={50} />
-                        <p className="text-white pt-2">Mínimo 6 meses en tu trabajo actual</p>
+                        <p className="text-white pt-2 text-[10px] w-[100px]">Mínimo 6 meses en tu trabajo actual</p>
                       </div>
                     </div>
-                    <div className="grid grid-cols-1 gap-6 items-center justify-center pb-10">
-                      <div className="flex flex-col text-center p-4 items-center justify-center">
+                    <div className="grid grid-cols-1 gap-2 items-center justify-center pb-10">
+                      <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/colab3.png" alt="Colab 1" width={50} height={50} />
-                        <p className="text-white pt-2">Buen historial crediticio</p>
+                        <p className="text-white pt-2 text-[10px] w-[100px]">Buen historial crediticio</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="flex flex-row-reverse border-l-[1px] border-[#00000028]">
-                  <Image src="/colaboradora.png" alt="Colaboradora" width={200} height={100} />
-                  <div className="flex flex-col items-center justify-center px-10">
+                  <Image src="/colaboradora.png" alt="Colaboradora" width={400} height={100} />
+                  <div className="flex flex-col items-center justify-between w-full px-10">
                     <h1 className="text-white py-10">Dueño de negocio</h1>
-                    <div className="grid grid-cols-2 gap-6 items-center justify-center">
-                      <div className="flex flex-col text-center p-4 items-center justify-center">
+                    <div className="grid grid-cols-2 gap-4 pb-4 items-center justify-center">
+                      <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/colab4.png" alt="Colab 4" width={50} height={50} />
-                        <p className="text-white pt-2">Negocio formal o informal</p>
+                        <p className="text-white pt-2 text-[10px] w-[100px]">Negocio formal o informal</p>
                       </div>
-                      <div className="flex flex-col text-center p-4 items-center justify-center">
+                      <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/colab2.png" alt="Colab 1" width={50} height={50} />
-                        <p className="text-white pt-2">Mínimo 6 meses en tu negocio</p>
+                        <p className="text-white pt-2 text-[10px] w-[100px]">Mínimo 6 meses en tu negocio</p>
                       </div>
                     </div>
-                    <div className="grid grid-cols-1 gap-6 items-center justify-center pb-10">
-                      <div className="flex flex-col text-center p-4 items-center justify-center">
+                    <div className="grid grid-cols-1 gap-2 items-center justify-center pb-10">
+                      <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/colab3.png" alt="Colab 1" width={50} height={50} />
-                        <p className="text-white pt-2">Buen historial en sistema financiero</p>
+                        <p className="text-white pt-2 text-[10px] w-[100px]">Buen historial en sistema financiero</p>
                       </div>
                     </div>
                   </div>
@@ -183,81 +277,81 @@ export default function Home() {
             <div className="bg-gray-50 p-4 rounded-xl" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
               <div className="grid grid-cols-2 w-full bg-[#DD0B18] rounded-xl">
                 <div className="flex flex-row border-r-[1px] border-[#00000028]">
-                  <Image src="/colaborador.png" alt="Colaborador" width={200} height={100} />
-                  <div className="flex flex-col items-center justify-center px-10">
+                  <Image src="/colaborador.png" alt="Colaborador" width={400} height={100} />
+                  <div className="flex flex-col items-center justify-between w-full px-10">
                     <h1 className="text-white py-10">Colaborador</h1>
-                    <div className="grid grid-cols-3 gap-6 items-center justify-center">
-                      <div className="flex flex-col text-center p-4 items-center justify-center">
+                    <div className="grid grid-cols-3 py-4 items-center justify-center gap-4">
+                      <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/id.png" alt="Id" width={50} height={50} />
-                        <p className="text-white pt-2">Boleto o recibo por honorarios</p>
+                        <p className="text-white pt-2 text-[10px] w-[100px]">Copia de DNI titular, cónyuge y/o esposa</p>
                       </div>
-                      <div className="flex flex-col text-center p-4 items-center justify-center">
+                      <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/bill.png" alt="Bill" width={50} height={50} />
-                        <p className="text-white pt-2">Mínimo 6 meses en tu trabajo actual</p>
+                        <p className="text-white pt-2 text-[10px] w-[100px]">Recibo de servicios (con un antiguedad no mayor a 2 meses)</p>
                       </div>
-                      <div className="flex flex-col text-center p-4 items-center justify-center">
+                      <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/cheque.png" alt="Cheque" width={50} height={50} />
-                        <p className="text-white pt-2">Mínimo 6 meses en tu trabajo actual</p>
+                        <p className="text-white pt-2 text-[10px] w-[100px]">Mínimo 6 meses en tu trabajo actual</p>
                       </div>
                     </div>
-                    <div className="grid grid-cols-3 gap-6 items-center justify-center">
-                      <div className="flex flex-col text-center p-4 items-center justify-center">
+                    <div className="grid grid-cols-3 py-4 items-center justify-center gap-4">
+                      <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/adult.png" alt="Adult" width={50} height={50} />
-                        <p className="text-white pt-2">De 18 a 69 años</p>
+                        <p className="text-white pt-2 text-[10px] w-[100px]">De 18 a 69 años</p>
                       </div>
-                      <div className="flex flex-col text-center p-4 items-center justify-center">
+                      <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/budget.png" alt="Budget" width={50} height={50} />
-                        <p className="text-white pt-2">Mínimo 6 meses en tu trabajo actual</p>
+                        <p className="text-white pt-2 text-[10px] w-[100px]">Mínimo 6 meses en tu trabajo actual</p>
                       </div>
-                      <div className="flex flex-col text-center p-4 items-center justify-center">
+                      <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/family.png" alt="family" width={50} height={50} />
-                        <p className="text-white pt-2">Mínimo 6 meses en tu trabajo actual</p>
+                        <p className="text-white pt-2 text-[10px] w-[100px]">Mínimo 6 meses en tu trabajo actual</p>
                       </div>
                     </div>
-                    <div className="grid grid-cols-1 gap-6 items-center justify-center pb-10">
-                      <div className="flex flex-col text-center p-4 items-center justify-center">
+                    <div className="grid grid-cols-1 py-4 items-center justify-center pb-10">
+                      <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/documents.png" alt="Documents" width={50} height={50} />
-                        <p className="text-white pt-2">Otros documentos sujetos a evaluación</p>
+                        <p className="text-white pt-2 text-[10px] w-[100px]">Otros documentos sujetos a evaluación</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="flex flex-row-reverse border-l-[1px] border-[#00000028]">
-                  <Image src="/colaboradora.png" alt="Colaboradora" width={200} height={100} />
-                  <div className="flex flex-col items-center justify-center px-10">
+                  <Image src="/colaboradora.png" alt="Colaboradora" width={400} height={100} />
+                  <div className="flex flex-col items-center justify-between w-full px-10">
                     <h1 className="text-white py-10">Dueño de negocio</h1>
-                    <div className="grid grid-cols-3 gap-6 items-center justify-center">
-                      <div className="flex flex-col text-center p-4 items-center justify-center">
+                    <div className="grid grid-cols-3 py-4 items-center justify-center gap-4">
+                      <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/id.png" alt="Id" width={50} height={50} />
-                        <p className="text-white pt-2">Negocio formal o informal</p>
+                        <p className="text-white pt-2 text-[10px] w-[100px]">Negocio formal o informal</p>
                       </div>
-                      <div className="flex flex-col text-center p-4 items-center justify-center">
+                      <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/bill.png" alt="Bill" width={50} height={50} />
-                        <p className="text-white pt-2">Mínimo 6 meses en tu negocio</p>
+                        <p className="text-white pt-2 text-[10px] w-[100px]">Mínimo 6 meses en tu negocio</p>
                       </div>
-                      <div className="flex flex-col text-center p-4 items-center justify-center">
+                      <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/cheque-negocio.png" alt="Cheque Negocio" width={50} height={50} />
-                        <p className="text-white pt-2">Mínimo 6 meses en tu negocio</p>
+                        <p className="text-white pt-2 text-[10px] w-[100px]">Mínimo 6 meses en tu negocio</p>
                       </div>
                     </div>
-                    <div className="grid grid-cols-3 gap-6 items-center justify-center">
-                      <div className="flex flex-col text-center p-4 items-center justify-center">
+                    <div className="grid grid-cols-3 py-4 items-center justify-center gap-4">
+                      <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/adult.png" alt="Adult" width={50} height={50} />
-                        <p className="text-white pt-2">De 18 a 69 años</p>
+                        <p className="text-white pt-2 text-[10px] w-[100px]">De 18 a 69 años</p>
                       </div>
-                      <div className="flex flex-col text-center p-4 items-center justify-center">
+                      <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/budget.png" alt="Budget" width={50} height={50} />
-                        <p className="text-white pt-2">Mínimo 6 meses en tu negocio</p>
+                        <p className="text-white pt-2 text-[10px] w-[100px]">Mínimo 6 meses en tu negocio</p>
                       </div>
-                      <div className="flex flex-col text-center p-4 items-center justify-center">
+                      <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/family.png" alt="Family" width={50} height={50} />
-                        <p className="text-white pt-2">Mínimo 6 meses en tu negocio</p>
+                        <p className="text-white pt-2 text-[10px] w-[100px]">Mínimo 6 meses en tu negocio</p>
                       </div>
                     </div>
-                    <div className="grid grid-cols-1 gap-6 items-center justify-center pb-10">
-                      <div className="flex flex-col text-center p-4 items-center justify-center">
+                    <div className="grid grid-cols-1 py-4 items-center justify-center gap-4 pb-10">
+                      <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/documents.png" alt="Documents" width={50} height={50} />
-                        <p className="text-white pt-2">Otros documentos sujetos a evaluación</p>
+                        <p className="text-white pt-2 text-[10px] w-[100px]">Otros documentos sujetos a evaluación</p>
                       </div>
                     </div>
                   </div>
