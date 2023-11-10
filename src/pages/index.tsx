@@ -64,7 +64,7 @@ export default function Home() {
                 <span className="flex flex-row items-center justify-center gap-4">
                   <p className="font-normal text-xl lg:text-3xl">¿Qué es</p>
                 </span>
-                <span className="flex flex-col lg:flex-row items-center justify-center">
+                <span className="flex flex-row lg:flex-row items-center justify-center">
                   <Image src="/vivemejor.png" alt="Vive Mejor" width={200} height={100} />
                   <p className="font-normal text-lg lg:text-3xl">?</p>
                 </span>
@@ -82,29 +82,29 @@ export default function Home() {
             </div>
 
             <div id="slide2" className="carousel-item grid grid-cols-1 relative w-full">
-              <div className="flex flex-col h-screen text-white items-center justify-center pl-10 gap-10">
+              <div className="flex flex-col text-white items-center justify-center pl-10 gap-10">
                 <div className="flex flex-row items-center justify-center gap-4 w-full">
                   <p className="font-normal text-xl lg:text-3xl">¿Qué financia?</p>
                 </div>
-                <div className='flex flex-row w-full text-white items-center justify-center px-10 gap-10'>
-                  <div className="flex flex-col gap-2 items-center justify-center">
-                    <Image src="/G1.png" alt="Gota" width={200} height={50}/>
+                <div className='grid grid-cols-2 lg:grid-cols-5 text-white items-center justify-center'>
+                  <div className="flex flex-col items-center justify-center">
+                    <img src="/G1.png" alt="Gota" className='w-20'/>
                     <p className="pt-6 text-center w-[180px]">Construcción y mejoramiento de baño</p>
                   </div>
-                  <div className="flex flex-col gap-2 items-center justify-center">
-                    <Image src="/G2.png" alt="Gota" width={200} height={50}/>
+                  <div className="flex flex-col items-center justify-center">
+                    <img src="/G2.png" alt="Gota" className='w-20'/>
                     <p className="pt-6 text-center w-[180px]">Lavatorio de cocina multiusos</p>
                   </div>
-                  <div className="flex flex-col gap-2 items-center justify-center">
-                    <Image src="/G3.png" alt="Gota" width={200} height={50}/>
+                  <div className="flex flex-col items-center justify-center">
+                    <img src="/G3.png" alt="Gota" className='w-20'/>
                     <p className="pt-6 text-center w-[180px]">Tanque elevado</p>
                   </div>
-                  <div className="flex flex-col gap-2 items-center justify-center">
-                    <Image src="/G4.png" alt="Gota" width={200} height={50}/>
+                  <div className="flex flex-col items-center justify-center">
+                    <img src="/G4.png" alt="Gota" className='w-20'/>
                     <p className="pt-6 text-center w-[180px]">Instalación de terma</p>
                   </div>
-                  <div className="flex flex-col gap-2 items-center justify-center">
-                    <Image src="/G5.png" alt="Gota" width={200} height={50}/>
+                  <div className="flex flex-col items-center justify-center">
+                    <img src="/G5.png" alt="Gota" className='w-20'/>
                     <p className="pt-6 text-center w-[180px]">Conexión de alcantarillado</p>
                   </div>
                 </div>
@@ -115,19 +115,23 @@ export default function Home() {
               </div>
             </div>
 
-            <div id="slide3" className="carousel-item grid grid-cols-2 relative w-full">
-              <div className="flex flex-col h-screen text-white items-center justify-center pl-10 gap-4">
-                <div className="flex flex-row items-center justify-center gap-4 pb-6">
-                  <p className="font-normal text-xl lg:text-3xl">Nuestros Beneficios</p>
-                </div>
-                <div className="badge badge-outline py-10 px-10 w-[800px] bg-white/10 text-lg">Destinado a cubrir las necesidades básicas de los servicios de agua potable, alcantarillado e higiene.</div>
-                <div className="badge badge-outline py-10 px-10 w-[800px] bg-white/10 text-lg">Atención rápida y personalizada.</div>
-                <div className="badge badge-outline py-10 px-10 w-[800px] bg-white/10 text-lg">Tasas acorde a la competencia del mercado.</div>
-                <div className="badge badge-outline py-10 px-10 w-[800px] bg-white/10 text-lg">Mejora tu calidad de vida.</div>
-                <div className="badge badge-outline py-10 px-10 w-[800px] bg-white/10 text-lg">Puedes pagar tu crédito sin ir a tiendas a través de YAPE, app de Caja Sullana y Homebanking.</div>
+            <div id="slide3" className="carousel-item flex flex-col text-white relative w-full justify-center items-center gap-6">
+              <div className="flex flex-row items-center justify-center gap-4">
+                <p className="font-normal text-xl lg:text-3xl">Nuestros Beneficios</p>
               </div>
-              <div className="flex flex-col h-screen text-white items-center justify-center pl-10">
-                <Image src="/slide3.png" alt="Vive Mejor" width={500} height={500} className="rounded-full border-white border-4" />
+              <div className="flex flex-row justify-center items-center justify-items-center">
+                <div className="flex flex-col text-white items-center justify-center pl-10 gap-4">
+                  <div className="flex flex-col items-center justify-center gap-2">
+                    <div className="badge badge-outline border-1 px-2 w-full h-20 bg-white/10 text-xs lg:text-lg">Destinado a cubrir las necesidades básicas de los servicios de agua potable, alcantarillado e higiene.</div>
+                    <div className="badge badge-outline border-1 px-2 w-full h-20 bg-white/10 text-xs lg:text-lg">Atención rápida y personalizada.</div>
+                    <div className="badge badge-outline border-1 px-2 w-full h-20 bg-white/10 text-xs lg:text-lg">Tasas acorde a la competencia del mercado.</div>
+                    <div className="badge badge-outline border-1 px-2 w-full h-20 bg-white/10 text-xs lg:text-lg">Mejora tu calidad de vida.</div>
+                    <div className="badge badge-outline border-1 px-2 w-full h-20 bg-white/10 text-xs lg:text-lg">Puedes pagar tu crédito sin ir a tiendas a través de YAPE, app de Caja Sullana y Homebanking.</div>
+                  </div>
+                </div>
+                <div className="flex flex-col text-white items-center justify-center pl-10">
+                  <Image src="/slide3.png" alt="Vive Mejor" width={500} height={500} className="rounded-full border-white border-4" />
+                </div>
               </div>
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide2" className="btn btn-circle">❮</a> 
@@ -135,13 +139,29 @@ export default function Home() {
               </div>
             </div>
 
-            <div id="slide4" className="carousel-item grid grid-cols-2 relative w-full">
-              <div className="flex flex-col h-screen text-white items-center justify-center pl-10 gap-10">
+            <div id="slide4" className="carousel-item flex flex-col gap-10 lg:grid lg:grid-cols-2 items-center justify-center relative w-full">
+              <div className="flex flex-col text-white items-center justify-center pl-10 gap-2 lg:gap-20">
                 <p className="font-normal text-xl lg:text-3xl">¿Cómo puedo obtenerlo?</p>
-                <Image src="/mujer.png" alt="Vive Mejor" width={500} height={500} className="rounded-full border-white border-4" />
+                <img src="/alegre.png" alt="Vive Mejor" className="rounded-full w-60 h-60 lg:w-100 lg:h-100 border-white border-4" />
+                <button type="submit" className="text-[#DD0B18] bg-white focus:ring-4 focus:outline-none font-medium rounded-lg text-2xl w-auto sm:w-auto px-5 py-2.5 text-center">¡INICIA AQUÍ!</button>
               </div>
-              <div className="flex flex-col h-screen text-white items-center justify-center pl-10">
-                <Image src="/mujer.png" alt="Vive Mejor" width={500} height={500} className="rounded-full border-white border-4" />
+              <div className="grid grid-cols-2 text-white items-center justify-center px-6 gap-6 lg:gap-20"> 
+                <div className="flex flex-col items-center justify-center">
+                  <Image src="/1.png" alt="Vive Mejor" width={100} height={50}/>
+                  <p>Regístrate</p>
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <Image src="/2.png" alt="Vive Mejor" width={100} height={50}/>
+                  <p>Completa la información</p>
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <Image src="/3.png" alt="Vive Mejor" width={100} height={50}/>
+                  <p>Tómale foto a los documento requeridos</p>
+                </div>
+                <div className="flex flex-col items-center justify-center">
+                  <Image src="/4.png" alt="Vive Mejor" width={100} height={50}/>
+                  <p>Desembolsa el dinero</p>
+                </div>
               </div>
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide3" className="btn btn-circle">❮</a> 
@@ -152,14 +172,14 @@ export default function Home() {
         </div>
 
         <div className="flex flex-row w-full bg-white">
-          <div className="grid grid-cols-2 w-full bg-[url('/background-form.png')] bg-cover px-10 lg:px-40">
-            <div className='flex flex-col text-white items-left justify-center'>
+          <div className="grid grid-cols-1 lg:grid-cols-2 w-full bg-[url('/background-form.png')] bg-cover px-10 lg:px-40">
+            <div className='flex flex-col px-10 pt-20 lg:pt-0 text-white items-center justify-center'>
               <h1 className='text-[#DD0B18] text-3xl'>Cuéntanos más de ti</h1>
               <p className='text-black text-xl'>¡Adquiere tu crédito y empieza a vivir mejor!</p>
             </div>
             <div className="flex flex-col text-white items-center justify-center bg-[#DD0B18] my-40 py-20 rounded-xl">
-              <form className='flex flex-col px-10 justify-center items-center'>
-                <h1>Consulta tu crédito al instante</h1>
+              <form className='flex flex-col px-10 justify-center'>
+                <h1 className="text-center">Consulta tu crédito al instante</h1>
                 <div className="relative z-0 my-6 group">
                     <input type="dni" name="floating_dni" id="floating_dni" className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-white peer" placeholder=" " required />
                     <label htmlFor="floating_dni" className="peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">DNI</label>
@@ -177,28 +197,28 @@ export default function Home() {
                   <input type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="HASTA S/. 5.000,00" required />
                 </div>
                 <h1>¿En cuántas cuotas quieres pagar?</h1>
-                <div className="flex flex-row gap-6 py-6">
-                  <div className="flex items-center px-4 border border-gray-200 rounded">
+                <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-3 xl:grid-cols-6 gap-6 py-6">
+                  <div className="flex items-center justify-center px-2 border border-gray-200 rounded">
                     <input id="12" type="radio" value="" name="bordered-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"/>
                     <label htmlFor="12" className="w-full py-4 ml-2 text-sm font-medium text-white">12</label>
                   </div>
-                  <div className="flex items-center px-4 border border-gray-200 rounded">
+                  <div className="flex items-center justify-center px-2 border border-gray-200 rounded">
                     <input checked id="15" type="radio" value="" name="bordered-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"/>
                     <label htmlFor="15" className="w-full py-4 ml-2 text-sm font-medium text-white">15</label>
                   </div>
-                  <div className="flex items-center px-4 border border-gray-200 rounded">
+                  <div className="flex items-center justify-center px-2 border border-gray-200 rounded">
                     <input id="18" type="radio" value="" name="bordered-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"/>
                     <label htmlFor="18" className="w-full py-4 ml-2 text-sm font-medium text-white">18</label>
                   </div>
-                  <div className="flex items-center px-4 border border-gray-200 rounded">
+                  <div className="flex items-center justify-center px-2 border border-gray-200 rounded">
                     <input checked id="21" type="radio" value="" name="bordered-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"/>
                     <label htmlFor="21" className="w-full py-4 ml-2 text-sm font-medium text-white">21</label>
                   </div>
-                  <div className="flex items-center px-4 border border-gray-200 rounded">
+                  <div className="flex items-center justify-center px-2 border border-gray-200 rounded">
                     <input id="24" type="radio" value="" name="bordered-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"/>
                     <label htmlFor="24" className="w-full py-4 ml-2 text-sm font-medium text-white">24</label>
                   </div>
-                  <div className="flex items-center px-4 border border-gray-200 rounded">
+                  <div className="flex items-center justify-center px-2 border border-gray-200 rounded">
                     <input checked id="36" type="radio" value="" name="bordered-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"/>
                     <label htmlFor="36" className="w-full py-4 ml-2 text-sm font-medium text-white">36</label>
                   </div>
@@ -209,7 +229,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full bg-white px-40 py-20">
+        <div className="w-full bg-white px-10 py-20">
     
           <div className="mb-4">
 
@@ -225,13 +245,14 @@ export default function Home() {
           </div>
 
           <div id="myTabContent">
+
             <div className="bg-gray-50 p-4 rounded-lg hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
               <div className="grid grid-cols-2 w-full bg-[#DD0B18] rounded-xl">
                 <div className="flex flex-row border-r-[1px] border-[#00000028]">
-                  <Image src="/colaborador.png" alt="Colaborador" width={400} height={100} />
-                  <div className="flex flex-col items-center justify-between w-full px-10">
+                  <img src="/colaborador.png" alt="Colaborador" className="w-auto h-80 hidden lg:w-100 lg:h-auto lg:flex" />
+                  <div className="flex flex-col items-center justify-center w-full px-10">
                     <h1 className="text-white py-10">Colaborador</h1>
-                    <div className="grid grid-cols-2 gap-4 pb-4 items-center justify-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pb-4 items-center justify-center">
                       <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/colab1.png" alt="Colab 1" width={50} height={50} />
                         <p className="text-white pt-2 text-[10px] w-[100px]">Boleto o recibo por honorarios</p>
@@ -250,10 +271,10 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex flex-row-reverse border-l-[1px] border-[#00000028]">
-                  <Image src="/colaboradora.png" alt="Colaboradora" width={400} height={100} />
-                  <div className="flex flex-col items-center justify-between w-full px-10">
+                  <img src="/colaboradora.png" alt="Colaboradora" className="w-auto h-80 hidden lg:w-100 lg:h-auto lg:flex" />
+                  <div className="flex flex-col items-center justify-center w-full px-10">
                     <h1 className="text-white py-10">Dueño de negocio</h1>
-                    <div className="grid grid-cols-2 gap-4 pb-4 items-center justify-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pb-4 items-center justify-center">
                       <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/colab4.png" alt="Colab 4" width={50} height={50} />
                         <p className="text-white pt-2 text-[10px] w-[100px]">Negocio formal o informal</p>
@@ -277,10 +298,10 @@ export default function Home() {
             <div className="bg-gray-50 p-4 rounded-xl" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
               <div className="grid grid-cols-2 w-full bg-[#DD0B18] rounded-xl">
                 <div className="flex flex-row border-r-[1px] border-[#00000028]">
-                  <Image src="/colaborador.png" alt="Colaborador" width={400} height={100} />
+                  <img src="/colaborador.png" alt="Colaborador" className="w-auto h-80 hidden lg:w-100 lg:h-auto lg:flex" />
                   <div className="flex flex-col items-center justify-between w-full px-10">
                     <h1 className="text-white py-10">Colaborador</h1>
-                    <div className="grid grid-cols-3 py-4 items-center justify-center gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4 items-center justify-center gap-4">
                       <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/id.png" alt="Id" width={50} height={50} />
                         <p className="text-white pt-2 text-[10px] w-[100px]">Copia de DNI titular, cónyuge y/o esposa</p>
@@ -293,8 +314,6 @@ export default function Home() {
                         <Image src="/cheque.png" alt="Cheque" width={50} height={50} />
                         <p className="text-white pt-2 text-[10px] w-[100px]">Mínimo 6 meses en tu trabajo actual</p>
                       </div>
-                    </div>
-                    <div className="grid grid-cols-3 py-4 items-center justify-center gap-4">
                       <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/adult.png" alt="Adult" width={50} height={50} />
                         <p className="text-white pt-2 text-[10px] w-[100px]">De 18 a 69 años</p>
@@ -317,10 +336,10 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex flex-row-reverse border-l-[1px] border-[#00000028]">
-                  <Image src="/colaboradora.png" alt="Colaboradora" width={400} height={100} />
+                  <img src="/colaboradora.png" alt="Colaboradora" className="w-auto h-80 hidden lg:w-100 lg:h-auto lg:flex" />
                   <div className="flex flex-col items-center justify-between w-full px-10">
                     <h1 className="text-white py-10">Dueño de negocio</h1>
-                    <div className="grid grid-cols-3 py-4 items-center justify-center gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4 items-center justify-center gap-4">
                       <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/id.png" alt="Id" width={50} height={50} />
                         <p className="text-white pt-2 text-[10px] w-[100px]">Negocio formal o informal</p>
@@ -333,8 +352,6 @@ export default function Home() {
                         <Image src="/cheque-negocio.png" alt="Cheque Negocio" width={50} height={50} />
                         <p className="text-white pt-2 text-[10px] w-[100px]">Mínimo 6 meses en tu negocio</p>
                       </div>
-                    </div>
-                    <div className="grid grid-cols-3 py-4 items-center justify-center gap-4">
                       <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/adult.png" alt="Adult" width={50} height={50} />
                         <p className="text-white pt-2 text-[10px] w-[100px]">De 18 a 69 años</p>
@@ -358,6 +375,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </main>
