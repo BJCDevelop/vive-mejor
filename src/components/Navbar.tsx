@@ -33,7 +33,7 @@ export default function Navbar() {
 
           
         </div> */}
-        <div className="hidden gap-20 items-center lg:flex lg:flex-1 lg:justify-end">
+        <div className="hidden gap-6 items-center flex-1 lg:flex lg:justify-end">
           <a href="#" className="text-sm font-semibold leading-6 text-[#DD0B18]">
             Nosotros
           </a>
@@ -43,7 +43,7 @@ export default function Navbar() {
           <a href="#" className="text-sm font-semibold leading-6 text-[#DD0B18]">
             Requisitos
           </a>
-          <a href="#" className="text-sm px-10 py-2 font-semibold leading-6 text-white rounded-xl text-center bg-[#DD0B18]">
+          <a href="#" className="text-sm px-6 py-2 font-semibold leading-6 text-white rounded-xl text-center bg-[#DD0B18]">
             Pide tu crédito
             {/* <span aria-hidden="true">&rarr;</span> */}
           </a>
