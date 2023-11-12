@@ -140,25 +140,25 @@ export default function Home() {
             </div>
 
             <div id="slide4" className="carousel-item flex flex-col gap-10 lg:grid lg:grid-cols-2 items-center justify-center relative w-full">
-              <div className="flex flex-col text-white items-center justify-center pl-10 gap-2 lg:gap-20">
+              <div className="flex flex-col text-white items-center justify-center pl-10 gap-6 lg:gap-20">
                 <p className="font-normal text-xl lg:text-3xl">¿Cómo puedo obtenerlo?</p>
                 <img src="/alegre.png" alt="Vive Mejor" className="rounded-full w-60 h-60 lg:w-100 lg:h-100 border-white border-4" />
                 <button type="submit" className="text-[#DD0B18] bg-white focus:ring-4 focus:outline-none font-medium rounded-lg text-2xl w-auto sm:w-auto px-5 py-2.5 text-center">¡INICIA AQUÍ!</button>
               </div>
               <div className="grid grid-cols-2 text-white items-center justify-center px-6 gap-6 lg:gap-20"> 
-                <div className="flex flex-col items-center justify-center">
+                <div className="flex flex-col items-center justify-center gap-4 text-center">
                   <Image src="/1.png" alt="Vive Mejor" width={100} height={50}/>
                   <p>Regístrate</p>
                 </div>
-                <div className="flex flex-col items-center justify-center">
+                <div className="flex flex-col items-center justify-center gap-4 text-center">
                   <Image src="/2.png" alt="Vive Mejor" width={100} height={50}/>
                   <p>Completa la información</p>
                 </div>
-                <div className="flex flex-col items-center justify-center">
+                <div className="flex flex-col items-center justify-center gap-4 text-center">
                   <Image src="/3.png" alt="Vive Mejor" width={100} height={50}/>
                   <p>Tómale foto a los documento requeridos</p>
                 </div>
-                <div className="flex flex-col items-center justify-center">
+                <div className="flex flex-col items-center justify-center gap-4 text-center">
                   <Image src="/4.png" alt="Vive Mejor" width={100} height={50}/>
                   <p>Desembolsa el dinero</p>
                 </div>
@@ -248,11 +248,11 @@ export default function Home() {
 
             <div className="bg-gray-50 p-4 rounded-lg hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
               <div className="grid grid-cols-2 w-full bg-[#DD0B18] rounded-xl">
-                <div className="flex flex-row border-r-[1px] border-[#00000028]">
-                  <img src="/colaborador.png" alt="Colaborador" className="w-auto h-80 hidden lg:w-100 lg:h-auto lg:flex" />
+              <div className="flex flex-row border-r-[1px] border-[#00000028]">
+                <img src="/COLABORADOR-LANDING.png" alt="Colaborador" className="w-[320px] h-[540px] hidden lg:flex" />
                   <div className="flex flex-col items-center justify-center w-full px-10">
                     <h1 className="text-white py-10">Colaborador</h1>
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pb-4 items-center justify-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 gap-4 pb-4 items-center justify-center">
                       <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/colab1.png" alt="Colab 1" width={50} height={50} />
                         <p className="text-white pt-2 text-[10px] w-[100px]">Boleto o recibo por honorarios</p>
@@ -270,11 +270,11 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-row-reverse border-l-[1px] border-[#00000028]">
-                  <img src="/colaboradora.png" alt="Colaboradora" className="w-auto h-80 hidden lg:w-100 lg:h-auto lg:flex" />
+                <div className="flex flex-row-reverse border-r-[1px] border-[#00000028]">
+                  <img src="/COLABORADORA-LANDING.png" alt="Colaborador" className="w-[320px] h-[540px] hidden lg:flex" />
                   <div className="flex flex-col items-center justify-center w-full px-10">
-                    <h1 className="text-white py-10">Dueño de negocio</h1>
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pb-4 items-center justify-center">
+                    <h1 className="text-white text-center py-10">Dueño de negocio</h1>
+                    <div className="grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 gap-4 pb-4 items-center justify-center">
                       <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/colab4.png" alt="Colab 4" width={50} height={50} />
                         <p className="text-white pt-2 text-[10px] w-[100px]">Negocio formal o informal</p>
@@ -297,11 +297,11 @@ export default function Home() {
 
             <div className="bg-gray-50 p-4 rounded-xl" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
               <div className="grid grid-cols-2 w-full bg-[#DD0B18] rounded-xl">
-                <div className="flex flex-row border-r-[1px] border-[#00000028]">
-                  <img src="/colaborador.png" alt="Colaborador" className="w-auto h-80 hidden lg:w-100 lg:h-auto lg:flex" />
+                <div className="flex flex-row items-end border-r-[1px] border-[#00000028]">
+                  <img src="/COLABORADOR-LANDING.png" alt="Colaborador" className="w-[320px] h-[540px] hidden lg:flex" />
                   <div className="flex flex-col items-center justify-between w-full px-10">
                     <h1 className="text-white py-10">Colaborador</h1>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4 items-center justify-center gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 py-4 items-center justify-center gap-4">
                       <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/id.png" alt="Id" width={50} height={50} />
                         <p className="text-white pt-2 text-[10px] w-[100px]">Copia de DNI titular, cónyuge y/o esposa</p>
@@ -335,11 +335,11 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-row-reverse border-l-[1px] border-[#00000028]">
-                  <img src="/colaboradora.png" alt="Colaboradora" className="w-auto h-80 hidden lg:w-100 lg:h-auto lg:flex" />
+                <div className="flex flex-row-reverse items-end border-r-[1px] border-[#00000028]">
+                  <img src="/COLABORADORA-LANDING.png" alt="Colaborador" className="w-[320px] h-[540px] hidden lg:flex" />
                   <div className="flex flex-col items-center justify-between w-full px-10">
                     <h1 className="text-white py-10">Dueño de negocio</h1>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-4 items-center justify-center gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 py-4 items-center justify-center gap-4">
                       <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/id.png" alt="Id" width={50} height={50} />
                         <p className="text-white pt-2 text-[10px] w-[100px]">Negocio formal o informal</p>
