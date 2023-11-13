@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import Navbar from '../components/Navbar'
 import { useState } from 'react'
 import Footer from '../components/Footer'
+import WhatsAppButton from '@/components/WhatsappButton'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,22 +17,22 @@ export default function Home() {
       <main
         className={`flex min-h-screen flex-col items-center justify-between ${inter.className}`}
       >
-        <div className="grid grid-cols-2 w-full bg-cover bg-center">
-          <div className="flex flex-col h-screen text-white items-center justify-center pl-10">
-            <span className="flex flex-col lg:flex-row items-center justify-center gap-4">
-              <Image src="/vivemejor.png" alt="Vive Mejor" width={200} height={100} />
+        <div className="grid grid-cols-2 w-full bg-cover bg-center pl-20">
+          <div className="flex flex-col h-screen text-white items-left justify-center pl-10">
+            <span className="flex flex-col lg:flex-row items-left justify-left gap-4">
+              <Image src="/VIVE-MEJOR.svg" alt="Vive Mejor" width={200} height={100} />
               <p className="font-normal text-lg lg:text-3xl">te da la</p>
             </span>
-            <span className="flex flex-row items-center justify-center gap-4">
+            <span className="flex flex-row items-center justify-left gap-4">
               <p className="font-normal text-xl lg:text-3xl">oportunidad de mejorar</p>
             </span>
-            <span className="flex flex-row items-center justify-center gap-4">
+            <span className="flex flex-row items-center justify-left gap-4">
               <p className="font-normal text-xl lg:text-3xl">tu vida con un solo click</p>
             </span>
             <span className="flex flex-row items-center justify-left gap-4 pt-10 pb-10">
               <p className="font-normal text-lg">¡Solicita tu crédito hoy!</p>
             </span>
-            <span className="flex flex-row items-center justify-center gap-4">
+            <span className="flex flex-row items-center justify-left gap-4">
               <button className="bg-[#DD0B18] py-2 px-8 rounded-xl">¡LO QUIERO!</button>
             </span>
           </div>
@@ -58,14 +59,14 @@ export default function Home() {
         </div> */}
 
         <div className='relative bg-gradient-to-b from-white/0 to-white w-full'>
-          <div className="carousel w-full bg-[url('/curvorojo.png')] bg-cover">
+          <div className="carousel w-full h-auto bg-[url('/curvorojo.png')] bg-cover bg-no-repeat bg-center">
             <div id="slide1" className="carousel-item grid grid-cols-2 relative w-full">
               <div className="flex flex-col h-screen text-white items-center justify-center pl-10">
                 <span className="flex flex-row items-center justify-center gap-4">
                   <p className="font-normal text-xl lg:text-3xl">¿Qué es</p>
                 </span>
                 <span className="flex flex-row lg:flex-row items-center justify-center">
-                  <Image src="/vivemejor.png" alt="Vive Mejor" width={200} height={100} />
+                  <Image src="/VIVE-MEJOR.svg" alt="Vive Mejor" width={200} height={100} />
                   <p className="font-normal text-lg lg:text-3xl">?</p>
                 </span>
                 <span className="flex flex-row items-center justify-center pt-20">
@@ -197,7 +198,7 @@ export default function Home() {
                   <input type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="HASTA S/. 5.000,00" required />
                 </div>
                 <h1>¿En cuántas cuotas quieres pagar?</h1>
-                <div className="grid grid-cols-3 md:grid-cols-6 lg:grid-cols-3 xl:grid-cols-6 gap-6 py-6">
+                <div className="grid grid-cols-6 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6 gap-6 py-6">
                   <div className="flex items-center justify-center px-2 border border-gray-200 rounded">
                     <input id="12" type="radio" value="" name="bordered-radio" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"/>
                     <label htmlFor="12" className="w-full py-4 ml-2 text-sm font-medium text-white">12</label>
@@ -223,7 +224,7 @@ export default function Home() {
                     <label htmlFor="36" className="w-full py-4 ml-2 text-sm font-medium text-white">36</label>
                   </div>
                 </div>
-                <button type="submit" className="text-white bg-[#FAC300] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">CONSULTAR</button>
+                <button type="submit" className="text-[#DD0B18] bg-[#FAC300] focus:ring-4 focus:outline-none font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">CONSULTAR</button>
               </form>
             </div>
           </div>
@@ -378,6 +379,7 @@ export default function Home() {
 
           </div>
         </div>
+        <WhatsAppButton />
       </main>
       <Footer />
     </>

@@ -13,10 +13,10 @@ export default function Navbar() {
   return (
     <header className="bg-white absolute w-full">
       <nav className="mx-10 flex w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div className="flex lg:flex-1">
-          <Link href="/" className="-m-1.5 p-1.5">
+        <div className="flex justify-left items-center pl-10 lg:flex-1">
+          <Link href="/" className="">
             <span className="sr-only">Casa Sullana</span>
-            <Image className="h-8 w-auto" src="/LOGO.svg" alt="Logo" width={100} height={50} />
+            <img className="h-[80px] w-[220px]" src="/LOGO.svg" alt="Logo" />
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -52,10 +52,10 @@ export default function Navbar() {
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-          <div className="flex items-center justify-between">
+          <div className="flex justify-center items-center">
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Casa Sullana</span>
-              <Image className="h-8 w-auto" src="/logo.png" alt="Logo" width={100} height={50} />
+              <Image className="h-8 w-auto" src="/LOGO.SVg" alt="Logo" width={160} height={80} />
             </Link>
             <button
               type="button"
