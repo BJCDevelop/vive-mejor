@@ -17,23 +17,26 @@ export default function Home() {
       <main
         className={`flex min-h-screen flex-col items-center justify-between ${inter.className}`}
       >
-        <div className="grid grid-cols-2 w-full bg-cover bg-center pl-20">
+        <div className="grid grid-cols-2 w-full bg-cover bg-black/20 bg-center pl-20">
           <div className="flex flex-col h-screen text-white items-left justify-center pl-10">
             <span className="flex flex-col lg:flex-row items-left justify-left gap-4">
               <Image src="/VIVE-MEJOR.svg" alt="Vive Mejor" width={200} height={100} />
-              <p className="font-normal text-lg lg:text-3xl">te da la</p>
+              <p className="font-normal hidden text-lg lg:text-3xl lg:flex">te da la</p>
             </span>
             <span className="flex flex-row items-center justify-left gap-4">
-              <p className="font-normal text-xl lg:text-3xl">oportunidad de mejorar</p>
+              <p className="font-normal hidden text-xl lg:flex lg:text-3xl">oportunidad de mejorar</p>
+              <p className="font-normal text-xl lg:text-3xl lg:hidden">te da la oportunidad de mejorar tu vida con un solo click</p>
             </span>
             <span className="flex flex-row items-center justify-left gap-4">
-              <p className="font-normal text-xl lg:text-3xl">tu vida con un solo click</p>
+              <p className="font-normal hidden text-xl lg:text-3xl lg:flex">tu vida con un solo clic</p>
             </span>
             <span className="flex flex-row items-center justify-left gap-4 pt-10 pb-10">
-              <p className="font-normal text-lg">¡Solicita tu crédito hoy!</p>
+              <p className="font-normal text-lg lg:text-2xl">¡Solicita tu crédito hoy!</p>
             </span>
             <span className="flex flex-row items-center justify-left gap-4">
-              <button className="bg-[#DD0B18] py-2 px-8 rounded-xl">¡LO QUIERO!</button>
+              <a href="https://cutt.ly/holaprestamo" target="_blank" rel="noopener noreferrer">
+                <button className="bg-[#DD0B18] py-2 px-8 rounded-xl">¡LO QUIERO!</button>
+              </a>
             </span>
           </div>
         </div>
@@ -58,7 +61,7 @@ export default function Home() {
           </div>
         </div> */}
 
-        <div className='relative bg-gradient-to-b from-white/0 to-white w-full'>
+        <div className='relative bg-gradient-to-b from-black/20 to-white w-full'>
           <div className="carousel w-full h-auto bg-[url('/curvorojo.png')] bg-cover bg-no-repeat bg-center">
             <div id="slide1" className="carousel-item grid grid-cols-2 relative w-full">
               <div className="flex flex-col h-screen text-white items-center justify-center pl-10">
@@ -144,7 +147,9 @@ export default function Home() {
               <div className="flex flex-col text-white items-center justify-center pl-10 gap-6 lg:gap-20">
                 <p className="font-normal text-xl lg:text-3xl">¿Cómo puedo obtenerlo?</p>
                 <img src="/alegre.png" alt="Vive Mejor" className="rounded-full w-60 h-60 lg:w-100 lg:h-100 border-white border-4" />
-                <button type="submit" className="text-[#DD0B18] bg-white focus:ring-4 focus:outline-none font-medium rounded-lg text-2xl w-auto sm:w-auto px-5 py-2.5 text-center">¡INICIA AQUÍ!</button>
+                <a href="https://cutt.ly/holaprestamo" target="_blank" rel="noopener noreferrer">
+                  <button type="submit" className="text-[#DD0B18] bg-white focus:ring-4 focus:outline-none font-medium rounded-lg text-2xl w-auto sm:w-auto px-5 py-2.5 text-center">¡INICIA AQUÍ!</button>
+                </a>
               </div>
               <div className="grid grid-cols-2 text-white items-center justify-center px-6 gap-6 lg:gap-20"> 
                 <div className="flex flex-col items-center justify-center gap-4 text-center">

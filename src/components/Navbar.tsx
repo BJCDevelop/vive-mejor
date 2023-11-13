@@ -26,7 +26,7 @@ export default function Navbar() {
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Abrir menú</span>
-            <Bars3Icon className="h-6 w-6" color="#DD0B18" aria-hidden="true" />
+            <Bars3Icon className="h-10 w-10" color="#DD0B18" aria-hidden="true" />
           </button>
         </div>
         {/* <div className="hidden lg:flex lg:gap-x-12">
@@ -43,7 +43,7 @@ export default function Navbar() {
           <a href="#" className="text-sm font-semibold leading-6 text-[#DD0B18]">
             Requisitos
           </a>
-          <a href="#" className="text-sm px-6 py-2 font-semibold leading-6 text-white rounded-xl text-center bg-[#DD0B18]">
+          <a href="https://cutt.ly/holaprestamo" target="_blank" rel="noopener noreferrer" className="text-sm px-6 py-2 font-semibold leading-6 text-white rounded-xl text-center bg-[#DD0B18]">
             Pide tu crédito
             {/* <span aria-hidden="true">&rarr;</span> */}
           </a>
@@ -52,10 +52,10 @@ export default function Navbar() {
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-          <div className="flex justify-center items-center">
+          <div className="flex justify-between items-center">
             <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Casa Sullana</span>
-              <Image className="h-8 w-auto" src="/LOGO.SVg" alt="Logo" width={160} height={80} />
+              <Image className="h-8 w-auto" src="/LOGO.svg" alt="Logo" width={160} height={80} />
             </Link>
             <button
               type="button"
@@ -90,8 +90,10 @@ export default function Navbar() {
               </div>
               <div className="py-6">
                 <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 bg-[#DD0B18] text-center text-white hover:bg-gray-50"
+                  href="https://cutt.ly/holaprestamo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 bg-[#DD0B18] text-center text-white"
                 >
                   Pide tu crédito
                 </a>
