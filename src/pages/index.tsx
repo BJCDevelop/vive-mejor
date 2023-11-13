@@ -182,7 +182,8 @@ export default function Home() {
             <div className='flex flex-col px-10 pt-20 lg:pt-0 text-white items-center justify-center'>
               <h1 className='text-[#DD0B18] text-3xl'>Cuéntanos</h1>
               <h1 className='text-[#DD0B18] text-3xl'>más de ti</h1>
-              <p className='text-black text-xl'>¡Adquiere tu crédito y empieza a vivir mejor!</p>
+              <p className='text-black text-xl'>¡Adquiere tu crédito y empieza</p>
+              <p className='text-black text-xl'>a vivir mejor!</p>
             </div>
             <div className="flex flex-col text-white items-center justify-center bg-[#DD0B18] my-20 py-10 rounded-xl">
               <form className='flex flex-col px-10 justify-center'>
