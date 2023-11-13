@@ -16,7 +16,7 @@ export default function Navbar() {
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Casa Sullana</span>
-            <Image className="h-8 w-auto" src="/logo.png" alt="Logo" width={100} height={50} />
+            <Image className="h-8 w-auto" src="/LOGO.svg" alt="Logo" width={100} height={50} />
           </Link>
         </div>
         <div className="flex lg:hidden">
