@@ -147,19 +147,19 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-2 text-white items-center justify-center px-6 gap-6 lg:gap-20"> 
                 <div className="flex flex-col items-center justify-center gap-4 text-center">
-                  <Image src="/1.png" alt="Vive Mejor" width={100} height={50}/>
+                  <Image src="/1.svg" alt="Vive Mejor" width={100} height={50}/>
                   <p>Regístrate</p>
                 </div>
                 <div className="flex flex-col items-center justify-center gap-4 text-center">
-                  <Image src="/2.png" alt="Vive Mejor" width={100} height={50}/>
+                  <Image src="/2.svg" alt="Vive Mejor" width={100} height={50}/>
                   <p>Completa la información</p>
                 </div>
                 <div className="flex flex-col items-center justify-center gap-4 text-center">
-                  <Image src="/3.png" alt="Vive Mejor" width={100} height={50}/>
+                  <Image src="/3.svg" alt="Vive Mejor" width={100} height={50}/>
                   <p>Tómale foto a los documento requeridos</p>
                 </div>
                 <div className="flex flex-col items-center justify-center gap-4 text-center">
-                  <Image src="/4.png" alt="Vive Mejor" width={100} height={50}/>
+                  <Image src="/4.svg" alt="Vive Mejor" width={100} height={50}/>
                   <p>Desembolsa el dinero</p>
                 </div>
               </div>
@@ -172,7 +172,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-row w-full bg-white">
-          <div className="grid grid-cols-1 lg:grid-cols-2 w-full bg-[url('/background-form.png')] bg-cover px-10 lg:px-40">
+          <div className="grid grid-cols-1 lg:grid-cols-2 w-full bg-[url('/BACKGROUND.svg')] bg-cover px-10 lg:px-40">
             <div className='flex flex-col px-10 pt-20 lg:pt-0 text-white items-center justify-center'>
               <h1 className='text-[#DD0B18] text-3xl'>Cuéntanos más de ti</h1>
               <p className='text-black text-xl'>¡Adquiere tu crédito y empieza a vivir mejor!</p>
