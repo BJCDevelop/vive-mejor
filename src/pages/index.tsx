@@ -183,7 +183,7 @@ export default function Home() {
               <h1 className='text-[#DD0B18] text-3xl'>Cuéntanos más de ti</h1>
               <p className='text-black text-xl'>¡Adquiere tu crédito y empieza a vivir mejor!</p>
             </div>
-            <div className="flex flex-col text-white items-center justify-center bg-[#DD0B18] my-40 py-20 rounded-xl">
+            <div className="flex flex-col text-white items-center justify-center bg-[#DD0B18] my-20 py-10 rounded-xl">
               <form className='flex flex-col px-10 justify-center'>
                 <h1 className="text-center">Consulta tu crédito al instante</h1>
                 <div className="relative z-0 my-6 group">
