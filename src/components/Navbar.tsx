@@ -34,7 +34,7 @@ export default function Navbar() {
           
         </div> */}
         <div className="hidden gap-6 items-center flex-1 lg:flex lg:justify-end">
-          <Link href="#" className="text-sm font-semibold leading-6 text-[#DD0B18] font-['BreePeru-Light']">
+          <Link href="#slide1" className="text-sm font-semibold leading-6 text-[#DD0B18] font-['BreePeru-Light']">
             Nosotros
           </Link>
           <Link href="#" className="text-sm font-semibold leading-6 text-[#DD0B18] font-['BreePeru-Light']">

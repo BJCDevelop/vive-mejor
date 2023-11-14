@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#DD0B18] w-full">
       <nav className="mx-10 flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div className="hidden flex-col max-w-lg lg:flex-1 text-white gap-4 xl:flex">
+        <div className="hidden flex-col max-w-lg md:flex-1 text-white gap-4 xl:flex">
             <h2 className="font-['BreePeru-Light']">Links de interes</h2>
             <div className="grid grid-cols-4">
                 <div className="flex flex-col gap-2">

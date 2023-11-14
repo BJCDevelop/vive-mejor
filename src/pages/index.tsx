@@ -41,25 +41,28 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='relative bg-gradient-to-b from-black/20 to-white w-full'>
-          <div className="carousel w-full h-auto bg-[url('/curvorojo.png')] bg-cover bg-no-repeat bg-center">
-            <div id="slide1" className="carousel-item grid grid-cols-2 relative w-full mx-10">
-              <div className="flex flex-col h-screen text-white items-center justify-center pl-10">
+        <div className="relative bg-gradient-to-b from-black/20 to-white w-full">
+          <div className="carousel w-full py-10 bg-[url('/curvorojo.png')] bg-cover bg-no-repeat bg-center">
+
+            <div id="slide1" className="carousel-item grid grid-cols-1 lg:grid-cols-2 relative w-full justify-evenly px-2 lg:px-20">
+              <div className="flex flex-col text-white items-center justify-center">
                 <span className="flex flex-row items-center justify-center gap-4">
                   <p className="font-normal font-['BreePeru-Regular'] text-xl lg:text-5xl">¿Qué es</p>
                 </span>
                 <span className="flex flex-row lg:flex-row items-center justify-center">
-                  <img src="/VIVE-MEJOR.svg" alt="Vive Mejor" className="w-200 h-100 lg:w-300 lg:h-150" />
+                  <img src="/VIVE-MEJOR.svg" alt="Vive Mejor" className="flex w-[120px] h-[60px] lg:hidden" />
+                  <img src="/VIVE-MEJOR.svg" alt="Vive Mejor" className="hidden w-[300px] h-[150px] lg:flex" />
                   <p className="font-normal font-['BreePeru-Regular'] text-lg lg:text-5xl">?</p>
                 </span>
-                <span className="flex flex-col items-center justify-center pt-20">
+                <span className="flex flex-col items-center justify-center lg:pt-20">
                   <p className="font-['BreePeru-Light'] font-normal text-md lg:text-xl text-center">Es un crédito que financia el mejoramiento,</p>
                   <p className="font-['BreePeru-Light'] font-normal text-md lg:text-xl text-center">construcción o ampliación de los puntos</p>
                   <p className="font-['BreePeru-Light'] font-normal text-md lg:text-xl text-center">por donde recorre el agua.</p>
                 </span>
               </div>
-              <div className="flex flex-col h-screen text-white items-center justify-center pl-10">
-                <img src="/mujer.png" alt="Vive Mejor" className="rounded-full border-white border-4 w-100 h-100" />
+              <div className="flex flex-col lg:h-screen text-white items-center justify-center">
+                <img src="/mujer.png" alt="Vive Mejor" className="rounded-full border-white border-4 flex lg:hidden w-60 h-60" />
+                <img src="/mujer.png" alt="Vive Mejor" className="rounded-full border-white border-4 hidden lg:flex w-100 h-100" />
               </div>
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide4" className="btn btn-circle">❮</a> 
@@ -102,9 +105,9 @@ export default function Home() {
             </div>
 
             <div id="slide3" className="carousel-item flex flex-col text-white relative w-full justify-center items-center gap-6">
-              <div className="flex flex-col-reverse lg:flex-row justify-center items-center justify-items-center lg:gap-60 w-full">
+              <div className="flex flex-col-reverse lg:flex-row justify-center items-center justify-items-center px-20 lg:gap-60 w-full">
                 <div className="flex flex-col text-white items-center justify-center gap-10">
-                  <div className="flex flex-col items-center lg:items-left justify-left gap-2">
+                  <div className="flex flex-col items-center lg:items-center justify-around gap-2">
                     <p className="font-normal font-['BreePeru-Regular'] text-xl lg:text-5xl pb-10">Nuestros Beneficios</p>
                     <div className="font-['BreePeru-Light'] grid grid-cols-1 justify-start badge badge-outline border-0 rounded-full px-10 w-full h-20 bg-white/20 text-xs lg:text-lg">
                       <p>Destinado a cubrir las necesidades básicas de los</p>
@@ -133,7 +136,8 @@ export default function Home() {
             <div id="slide4" className="carousel-item flex flex-col gap-10 lg:grid lg:grid-cols-2 items-center justify-center relative w-full">
               <div className="flex flex-col text-white items-center justify-center pl-10 gap-6 lg:gap-20">
                 <p className="font-normal font-['BreePeru-Regular'] text-xl lg:text-5xl">¿Cómo puedo obtenerlo?</p>
-                <img src="/alegre.png" alt="Vive Mejor" className="rounded-full sm:w-60 sm:h-60 w-80 h-80 border-white border-4" />
+                <img src="/alegre.png" alt="Vive Mejor" className="flex lg:hidden rounded-full w-60 h-60 border-white border-4" />
+                <img src="/alegre.png" alt="Vive Mejor" className="hidden lg:flex rounded-full w-100 h-100 border-white border-4" />
                 <a href="https://cutt.ly/holaprestamo" target="_blank" rel="noopener noreferrer">
                   <button type="submit" className="text-[#DD0B18] font-['BreePeru-Regular']  bg-white focus:ring-4 focus:outline-none font-medium rounded-lg text-2xl w-auto sm:w-auto px-5 py-2.5 text-center">¡INICIA AQUÍ!</button>
                 </a>
@@ -174,7 +178,7 @@ export default function Home() {
               <p className="text-black font-['BreePeru-Light'] text-xl hidden lg:flex">a vivir mejor!</p>
               <p className="text-black font-['BreePeru-Light'] text-md font-bold flex lg:hidden">¡Adquiere tu crédito y empieza a vivir mejor!</p>
             </div>
-            <div className="flex flex-col text-white items-center justify-center shadow-xl bg-[#DD0B18] my-20 py-10 rounded-xl">
+            <div className="flex flex-col text-white items-center justify-center shadow-2xl bg-[#DD0B18] my-20 py-10 rounded-xl">
               <form className='flex flex-col px-10 justify-center'>
                 <h1 className="text-center text-xl font-normal font-['BreePeru-Light']">Consulta tu crédito al instante</h1>
                 <div className="relative z-0 my-6 group">
@@ -232,7 +236,7 @@ export default function Home() {
 
             <ul className="flex flex-wrap justify-center -mb-px" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
               <li className="mr-2" role="presentation">
-                <button className="font-['BreePeru-Light'] inline-block text-gray-500 hover:text-gray-600 hover:border-gray-300 rounded-t-lg py-4 px-4 text-lg font-medium text-center border-transparent border-b-2 active" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Perfil</button>
+                <button className="font-['BreePeru-Light'] inline-block text-gray-500 hover:text-gray-600 hover:border-gray-300 rounded-t-lg py-4 px-4 text-lg font-medium text-center border-transparent border-b-2 active" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="true">Perfil</button>
               </li>
               <li className="mr-2" role="presentation">
                 <button className="font-['BreePeru-Light'] inline-block text-gray-500 hover:text-gray-600 hover:border-gray-300 rounded-t-lg py-4 px-4 text-lg font-medium text-center border-transparent border-b-2 active:bg-red" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="true">Requisitos</button>
