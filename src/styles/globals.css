@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'BreePeru-Bold';
+  src: url('../../public/tipografia/BreePeru-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'BreePeru-Light';
+  src: url('../../public/tipografia/BreePeru-Light.otf');
+}
+
+@font-face {
+  font-family: 'BreePeru-Regular';
+  src: url('../../public/tipografia/BreePeru-Regular.otf');
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
