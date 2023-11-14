@@ -34,19 +34,19 @@ export default function Navbar() {
           
         </div> */}
         <div className="hidden gap-6 items-center flex-1 lg:flex lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-[#DD0B18]">
+          <Link href="#" className="text-sm font-semibold leading-6 text-[#DD0B18]">
             Nosotros
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-[#DD0B18]">
+          </Link>
+          <Link href="#" className="text-sm font-semibold leading-6 text-[#DD0B18]">
             Nuestros clientes
-          </a>
+          </Link>
           <a href="#" className="text-sm font-semibold leading-6 text-[#DD0B18]">
             Requisitos
           </a>
-          <a href="https://cutt.ly/holaprestamo" target="_blank" rel="noopener noreferrer" className="text-sm px-6 py-2 font-semibold leading-6 text-white rounded-xl text-center bg-[#DD0B18]">
+          <Link href="https://cutt.ly/holaprestamo" target="_blank" rel="noopener noreferrer" className="text-sm px-6 py-2 font-semibold leading-6 text-white rounded-xl text-center bg-[#DD0B18]">
             Pide tu crédito
             {/* <span aria-hidden="true">&rarr;</span> */}
-          </a>
+          </Link>
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -69,34 +69,34 @@ export default function Navbar() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <a
+                <Link
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#DD0B18] hover:bg-gray-50"
                 >
                   Nosotros
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#DD0B18] hover:bg-gray-50"
                 >
                   Nuestros clientes
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#DD0B18] hover:bg-gray-50"
                 >
                   Requisitos
-                </a>
+                </Link>
               </div>
               <div className="py-6">
-                <a
+                <Link
                   href="https://cutt.ly/holaprestamo"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 bg-[#DD0B18] text-center text-white"
                 >
                   Pide tu crédito
-                </a>
+                </Link>
               </div>
             </div>
           </div>

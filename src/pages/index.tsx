@@ -180,7 +180,8 @@ export default function Home() {
         <div className="flex flex-row w-full bg-white">
           <div className="grid grid-cols-1 lg:grid-cols-2 w-full bg-[url('/BACKGROUND.svg')] bg-cover px-10 lg:px-40">
             <div className='flex flex-col px-10 pt-20 lg:pt-0 text-white items-center justify-center'>
-              <h1 className='text-[#DD0B18] text-3xl'>Cuéntanos</h1>
+              <h1 className='text-[#DD0B18] tex
+              t-3xl'>Cuéntanos</h1>
               <h1 className='text-[#DD0B18] text-3xl'>más de ti</h1>
               <p className='text-black text-xl'>¡Adquiere tu crédito y empieza</p>
               <p className='text-black text-xl'>a vivir mejor!</p>

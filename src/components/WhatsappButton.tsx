@@ -1,10 +1,11 @@
+import Link from "next/link";
 import React, { useState } from "react";
 
 const WhatsAppButton = () => {
-  const [href, setHref] = useState("https://wa.me/58123456789");
+  const [href, setHref] = useState("http://mst.pe/CajaSullanaWhatsApp");
 
   return (
-    <a
+    <Link
       href={href}
       target="_blank"
       rel="noopener noreferrer"
@@ -15,7 +16,7 @@ const WhatsAppButton = () => {
         alt="WhatsApp"
         className="w-full h-full"
       />
-    </a>
+    </Link>
   );
 };
 
