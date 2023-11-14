@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import { useState } from 'react'
 import Footer from '../components/Footer'
 import WhatsAppButton from '@/components/WhatsappButton'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +18,7 @@ export default function Home() {
       <main
         className={`flex min-h-screen flex-col items-center justify-between ${inter.className}`}
       >
-        <div className="grid grid-cols-2 w-full bg-cover bg-black/20 bg-center pl-20">
+        <div className="grid grid-cols-2 w-full bg-cover bg-black/20 bg-center pl-4 md:pl-20">
           <div className="flex flex-col h-screen text-white items-left justify-center pl-10">
             <span className="flex flex-col lg:flex-row items-left justify-left gap-4">
               <Image src="/VIVE-MEJOR.svg" alt="Vive Mejor" width={200} height={100} />
@@ -41,7 +42,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative bg-gradient-to-b from-black/20 to-white w-full">
+        <div id="nosotros" className="relative bg-gradient-to-b from-black/20 to-white w-full">
           <div className="carousel w-full py-40 bg-[url('/curvorojo.png')] bg-cover bg-no-repeat bg-center">
 
             <div id="slide1" className="carousel-item grid grid-cols-1 lg:grid-cols-2 relative w-full justify-evenly px-2 lg:px-20">
@@ -181,17 +182,17 @@ export default function Home() {
             <div className="flex flex-col text-white items-center justify-center shadow-2xl bg-[#DD0B18] my-20 py-10 rounded-xl">
               <div className='flex flex-col px-10 justify-center'>
                 <h1 className="text-center text-xl font-normal font-['BreePeru-Light']">Consulta tu crédito al instante</h1>
-                <div className="relative z-0 my-6 group">
+                <div className="relative z-0 my-6 group text-center">
                     <input type="dni" name="floating_dni" id="floating_dni" className="font-['BreePeru-Light'] block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-white peer" placeholder=" " required />
-                    <label htmlFor="floating_dni" className="font-['BreePeru-Light'] peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">DNI</label>
+                    <label htmlFor="floating_dni" className="ml-[-12px] font-['BreePeru-Light'] peer-focus:font-medium peer-focus:ml-0 absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">DNI</label>
                 </div>
-                <div className="relative z-0 mb-6 group">
+                <div className="relative z-0 mb-6 group text-center">
                     <input type="phone" name="floating_phone" id="floating_phone" className="font-['BreePeru-Light'] block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-white peer" placeholder=" " required />
-                    <label htmlFor="floating_phone" className="font-['BreePeru-Light'] peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Celular</label>
+                    <label htmlFor="floating_phone" className="ml-[-20px] font-['BreePeru-Light'] peer-focus:font-medium peer-focus:ml-0 absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Celular</label>
                 </div>
-                <div className="relative z-0 mb-6 group">
+                <div className="relative z-0 mb-6 group text-center">
                     <input type="fullname" name="floating_fullname" id="font-['BreePeru-Light'] floating_fullname" className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-white peer" placeholder=" " required />
-                    <label htmlFor="floating_fullname" className="font-['BreePeru-Light'] peer-focus:font-medium absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombre Completo</label>
+                    <label htmlFor="floating_fullname" className="ml-[-50px] font-['BreePeru-Light'] peer-focus:font-medium peer-focus:ml-0 absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombre Completo</label>
                 </div>
                 <h1 className="font-['BreePeru-Light']">¿Cuánto necesitas?</h1>
                 <div className="relative z-0 my-6 group">
@@ -374,6 +375,31 @@ export default function Home() {
 
           </div>
         </div>
+
+        <div className="bg-white w-full flex flex-col items-center pb-10">
+          <div className="w-[500px] bg-transparent">
+            <div tabIndex={0} className="collapse rounded-none collapse-arrow border-0 border-b-2 text-center justify-center">
+              <div className="collapse-title text-xl text-[#DD0B18] font-['BreePeru-Light']">
+                Links de interés
+              </div>
+              <div className="collapse-content w-full"> 
+                <div className="grid grid-cols-2 gap-6 justify-start items-start justify-items-start w-full">
+                  <Link href="https://www.cajasullana.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">Caja Sullana</Link>
+                  <Link href="https://www.sunat.gob.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">Sunat</Link>
+                  <Link href="https://www.indecopi.gob.pe/indecopi" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">Indecopi</Link>
+                  <Link href="https://www.fpcmac.org.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">FPCMAC</Link>
+                  <Link href="https://www.afpintegra.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">AFP</Link>
+                  <Link href="https://www.sbs.gob.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">SBS</Link>
+                  <Link href="https://www.cofide.com.pe/COFIDE/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">COFIDE</Link>
+                  <Link href="https://www.sbs.gob.pe/usuarios/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">SBS - Usuarios</Link>
+                  <Link href="https://www.bcrp.gob.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">BCRP</Link>
+                  <Link href="https://www.reniec.gob.pe/portal/Principal.htm" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">Reniec</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <WhatsAppButton />
       </main>
       <Footer />

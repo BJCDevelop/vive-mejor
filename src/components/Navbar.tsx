@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <header className="bg-white absolute w-full">
       <nav className="mx-10 flex w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div className="flex justify-left items-center pl-10 lg:flex-1">
+        <div className="flex justify-left items-center pl-4 lg:pl-10 lg:flex-1">
           <Link href="/" className="">
             <span className="sr-only font-['BreePeru-Light']">Casa Sullana</span>
             <img className="h-[80px] w-[220px]" src="/LOGO.svg" alt="Logo" />
@@ -34,7 +34,7 @@ export default function Navbar() {
           
         </div> */}
         <div className="hidden gap-6 items-center flex-1 lg:flex lg:justify-end">
-          <Link href="#slide1" className="text-sm font-semibold leading-6 text-[#DD0B18] font-['BreePeru-Light']">
+          <Link href="#nosotros" className="text-sm font-semibold leading-6 text-[#DD0B18] font-['BreePeru-Light']">
             Nosotros
           </Link>
           <Link href="#myTabContent" className="text-sm font-semibold leading-6 text-[#DD0B18] font-['BreePeru-Light']">
@@ -70,7 +70,7 @@ export default function Navbar() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <Link
-                  href="#slide1"
+                  href="#nosotros"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#DD0B18] hover:bg-gray-50 font-['BreePeru-Light']"
                 >
                   Nosotros
