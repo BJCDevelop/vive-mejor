@@ -37,10 +37,10 @@ export default function Navbar() {
           <Link href="#slide1" className="text-sm font-semibold leading-6 text-[#DD0B18] font-['BreePeru-Light']">
             Nosotros
           </Link>
-          <Link href="#" className="text-sm font-semibold leading-6 text-[#DD0B18] font-['BreePeru-Light']">
+          <Link href="#myTabContent" className="text-sm font-semibold leading-6 text-[#DD0B18] font-['BreePeru-Light']">
             Nuestros clientes
           </Link>
-          <a href="#" className="text-sm font-semibold leading-6 text-[#DD0B18] font-['BreePeru-Light']">
+          <a href="#myTabContent" className="text-sm font-semibold leading-6 text-[#DD0B18] font-['BreePeru-Light']">
             Requisitos
           </a>
           <Link href="https://cutt.ly/holaprestamo" target="_blank" rel="noopener noreferrer" className="font-['BreePeru-Light'] text-sm px-6 py-2 font-semibold leading-6 text-white rounded-xl text-center bg-[#DD0B18]">
@@ -70,19 +70,19 @@ export default function Navbar() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
                 <Link
-                  href="#"
+                  href="#slide1"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#DD0B18] hover:bg-gray-50 font-['BreePeru-Light']"
                 >
                   Nosotros
                 </Link>
                 <Link
-                  href="#"
+                  href="#myTabContent"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#DD0B18] hover:bg-gray-50 font-['BreePeru-Light']"
                 >
                   Nuestros clientes
                 </Link>
                 <Link
-                  href="#"
+                  href="#myTabContent"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#DD0B18] hover:bg-gray-50 font-['BreePeru-Light']"
                 >
                   Requisitos

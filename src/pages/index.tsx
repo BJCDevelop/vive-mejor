@@ -179,7 +179,7 @@ export default function Home() {
               <p className="text-black font-['BreePeru-Light'] text-md font-bold flex lg:hidden">¡Adquiere tu crédito y empieza a vivir mejor!</p>
             </div>
             <div className="flex flex-col text-white items-center justify-center shadow-2xl bg-[#DD0B18] my-20 py-10 rounded-xl">
-              <form className='flex flex-col px-10 justify-center'>
+              <div className='flex flex-col px-10 justify-center'>
                 <h1 className="text-center text-xl font-normal font-['BreePeru-Light']">Consulta tu crédito al instante</h1>
                 <div className="relative z-0 my-6 group">
                     <input type="dni" name="floating_dni" id="floating_dni" className="font-['BreePeru-Light'] block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-white peer" placeholder=" " required />
@@ -199,33 +199,28 @@ export default function Home() {
                 </div>
                 <h1 className="font-['BreePeru-Light']">¿En cuántas cuotas quieres pagar?</h1>
                 <div className="grid grid-cols-6 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6 gap-6 py-6">
-                  <div className="flex items-center justify-center px-2 border border-gray-200 rounded">
-                    <input id="12" type="radio" value="" name="bordered-radio" className="font-['BreePeru-Light'] w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"/>
-                    <label htmlFor="12" className="font-['BreePeru-Light'] w-full py-4 ml-2 text-sm font-medium text-white">12</label>
-                  </div>
-                  <div className="flex items-center justify-center px-2 border border-gray-200 rounded">
-                    <input checked id="15" type="radio" value="" name="bordered-radio" className="font-['BreePeru-Light'] w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"/>
-                    <label htmlFor="15" className="font-['BreePeru-Light'] w-full py-4 ml-2 text-sm font-medium text-white">15</label>
-                  </div>
-                  <div className="flex items-center justify-center px-2 border border-gray-200 rounded">
-                    <input id="18" type="radio" value="" name="bordered-radio" className="font-['BreePeru-Light'] w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"/>
-                    <label htmlFor="18" className="font-['BreePeru-Light'] w-full py-4 ml-2 text-sm font-medium text-white">18</label>
-                  </div>
-                  <div className="flex items-center justify-center px-2 border border-gray-200 rounded">
-                    <input checked id="21" type="radio" value="" name="bordered-radio" className="font-['BreePeru-Light'] w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"/>
-                    <label htmlFor="21" className="font-['BreePeru-Light'] w-full py-4 ml-2 text-sm font-medium text-white">21</label>
-                  </div>
-                  <div className="flex items-center justify-center px-2 border border-gray-200 rounded">
-                    <input id="24" type="radio" value="" name="bordered-radio" className="font-['BreePeru-Light'] w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"/>
-                    <label htmlFor="24" className="font-['BreePeru-Light'] w-full py-4 ml-2 text-sm font-medium text-white">24</label>
-                  </div>
-                  <div className="flex items-center justify-center px-2 border border-gray-200 rounded">
-                    <input checked id="36" type="radio" value="" name="bordered-radio" className="font-['BreePeru-Light'] w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500"/>
-                    <label htmlFor="36" className="font-['BreePeru-Light'] w-full py-4 ml-2 text-sm font-medium text-white">36</label>
-                  </div>
+                  <button type='button' className="btn btn-square btn-outline text-black font-['BeerPeru-Light] bg-white border-0 focus:bg-[#FFFCE0]">
+                    12
+                  </button>
+                  <button type='button' className="btn btn-square btn-outline text-black font-['BeerPeru-Light] bg-white border-0 focus:bg-[#FFFCE0]">
+                    15
+                  </button>
+                  <button type='button' className="btn btn-square btn-outline text-black font-['BeerPeru-Light] bg-white border-0 focus:bg-[#FFFCE0]">
+                    18
+                  </button>
+                  <button type='button' className="btn btn-square btn-outline text-black font-['BeerPeru-Light] bg-white border-0 focus:bg-[#FFFCE0]">
+                    21
+                  </button>
+                  <button type='button' className="btn btn-square btn-outline text-black font-['BeerPeru-Light] bg-white border-0 focus:bg-[#FFFCE0]">
+                    24
+                  </button>
+                  <button type='button' className="btn btn-square btn-outline text-black font-['BeerPeru-Light] bg-white border-0 focus:bg-[#FFFCE0]">
+                    36
+                  </button>
+                  
                 </div>
                 <button type="submit" className="font-['BreePeru-Light'] text-[#DD0B18] bg-[#FAC300] focus:ring-4 focus:outline-none font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">CONSULTAR</button>
-              </form>
+              </div>
             </div>
           </div>
         </div>
