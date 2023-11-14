@@ -42,7 +42,7 @@ export default function Home() {
         </div>
 
         <div className="relative bg-gradient-to-b from-black/20 to-white w-full">
-          <div className="carousel w-full py-10 bg-[url('/curvorojo.png')] bg-cover bg-no-repeat bg-center">
+          <div className="carousel w-full py-40 bg-[url('/curvorojo.png')] bg-cover bg-no-repeat bg-center">
 
             <div id="slide1" className="carousel-item grid grid-cols-1 lg:grid-cols-2 relative w-full justify-evenly px-2 lg:px-20">
               <div className="flex flex-col text-white items-center justify-center">
@@ -199,22 +199,22 @@ export default function Home() {
                 </div>
                 <h1 className="font-['BreePeru-Light']">¿En cuántas cuotas quieres pagar?</h1>
                 <div className="grid grid-cols-6 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6 gap-6 py-6">
-                  <button type='button' className="btn btn-square btn-outline text-black font-['BeerPeru-Light] bg-white border-0 focus:bg-[#FFFCE0]">
+                  <button type='button' className="btn btn-square btn-outline text-black focus:text-black font-['BeerPeru-Light] bg-white border-0 hover:bg-[#FFFCE0] focus:bg-[#FFFCE0]">
                     12
                   </button>
-                  <button type='button' className="btn btn-square btn-outline text-black font-['BeerPeru-Light] bg-white border-0 focus:bg-[#FFFCE0]">
+                  <button type='button' className="btn btn-square btn-outline text-black hover:text-black focus:text-black font-['BeerPeru-Light] bg-white border-0 hover:bg-[#FFFCE0] focus:bg-[#FFFCE0]">
                     15
                   </button>
-                  <button type='button' className="btn btn-square btn-outline text-black font-['BeerPeru-Light] bg-white border-0 focus:bg-[#FFFCE0]">
+                  <button type='button' className="btn btn-square btn-outline text-black hover:text-black focus:text-black font-['BeerPeru-Light] bg-white border-0 hover:bg-[#FFFCE0] focus:bg-[#FFFCE0]">
                     18
                   </button>
-                  <button type='button' className="btn btn-square btn-outline text-black font-['BeerPeru-Light] bg-white border-0 focus:bg-[#FFFCE0]">
+                  <button type='button' className="btn btn-square btn-outline text-black hover:text-black focus:text-black font-['BeerPeru-Light] bg-white border-0 hover:bg-[#FFFCE0] focus:bg-[#FFFCE0]">
                     21
                   </button>
-                  <button type='button' className="btn btn-square btn-outline text-black font-['BeerPeru-Light] bg-white border-0 focus:bg-[#FFFCE0]">
+                  <button type='button' className="btn btn-square btn-outline text-black hover:text-black focus:text-black font-['BeerPeru-Light] bg-white border-0 hover:bg-[#FFFCE0] focus:bg-[#FFFCE0]">
                     24
                   </button>
-                  <button type='button' className="btn btn-square btn-outline text-black font-['BeerPeru-Light] bg-white border-0 focus:bg-[#FFFCE0]">
+                  <button type='button' className="btn btn-square btn-outline text-black hover:text-black focus:text-black font-['BeerPeru-Light] bg-white border-0 hover:bg-[#FFFCE0] focus:bg-[#FFFCE0]">
                     36
                   </button>
                   
