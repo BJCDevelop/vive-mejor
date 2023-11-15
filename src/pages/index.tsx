@@ -376,7 +376,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-white w-full flex flex-col items-center pb-10">
+        <div className="bg-white xl:hidden w-full flex flex-col items-center pb-10">
           <div className="w-[500px] bg-transparent">
             <div tabIndex={0} className="collapse rounded-none collapse-arrow border-0 border-b-2 text-center justify-center">
               <div className="collapse-title text-xl text-[#DD0B18] font-['BreePeru-Light']">

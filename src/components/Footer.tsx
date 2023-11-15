@@ -47,7 +47,7 @@ export default function Footer() {
                     </Link>
                 </div>
                 <Link href="/" target="_blank" rel="noopener noreferrer" className="-m-1.5 p-1.5">
-                    <Image className="w-auto" src="/LIBRO.png" alt="Logo" width={200} height={100} />
+                    <Image className="w-auto" src="/LIBRO.svg" alt="Logo" width={200} height={100} />
                 </Link>
             </div>
             <Link href="/" target="_blank" rel="noopener noreferrer" className="-m-1.5 p-1.5">
