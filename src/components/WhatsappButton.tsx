@@ -9,7 +9,7 @@ const WhatsAppButton = () => {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-0 right-0 w-[100px] h-[100px] mr-10 mb-10 rounded-full text-white"
+      className="fixed bottom-0 right-0 w-[100px] h-[100px] mr-10 mb-20 rounded-full text-white"
     >
       <img
         src="/whatsapp.svg"

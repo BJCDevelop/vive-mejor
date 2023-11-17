@@ -71,18 +71,21 @@ export default function Navbar() {
               <div className="space-y-2 py-6">
                 <Link
                   href="#nosotros"
+                  onClick={() => setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#DD0B18] hover:bg-gray-50 font-['BreePeru-Light']"
                 >
                   Nosotros
                 </Link>
                 <Link
                   href="#myTabContent"
+                  onClick={() => setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#DD0B18] hover:bg-gray-50 font-['BreePeru-Light']"
                 >
                   Nuestros clientes
                 </Link>
                 <Link
                   href="#myTabContent"
+                  onClick={() => setMobileMenuOpen(false)}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-[#DD0B18] hover:bg-gray-50 font-['BreePeru-Light']"
                 >
                   Requisitos
