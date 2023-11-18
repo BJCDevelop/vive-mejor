@@ -47,15 +47,15 @@ export default function Home() {
         <div id="nosotros" className="relative bg-gradient-to-b from-black/20 to-white w-full">
           <div className="carousel w-full py-20 lg:py-40 bg-[url('/curvorojo.png')] bg-cover bg-no-repeat bg-center">
 
-            <div id="slide1" className="carousel-item flex flex-col gap-10 lg:grid lg:grid-cols-2 relative w-full justify-center px-2 lg:px-2">
-              <div className="flex flex-col text-white items-start pl-10 lg:pl-0">
+            <div id="slide1" className="carousel-item flex flex-col gap-40 lg:gap-10 lg:grid lg:grid-cols-2 relative w-full justify-center px-2 lg:px-2">
+              <div className="flex flex-col text-white items-start pl-10 lg:pl-40 lg:justify-center">
                 <span className="flex flex-row items-center justify-center gap-4">
-                  <p className="font-normal font-['BreePeru-Regular'] text-xl lg:text-5xl">¿Qué es</p>
+                  <p className="font-normal font-['BreePeru-Regular'] text-2xl lg:text-5xl">¿Qué es</p>
                 </span>
-                <span className="flex flex-row lg:flex-row items-start justify-start">
+                <span className="flex flex-row lg:flex-row items-center justify-start">
                   <img src="/VIVE-MEJOR.svg" alt="Vive Mejor" className="flex w-[120px] h-[60px] lg:hidden" />
                   <img src="/VIVE-MEJOR.svg" alt="Vive Mejor" className="hidden w-[300px] h-[150px] lg:flex" />
-                  <p className="font-normal font-['BreePeru-Regular'] text-lg lg:text-5xl">?</p>
+                  <p className="font-normal font-['BreePeru-Regular'] text-2xl lg:text-5xl">?</p>
                 </span>
                 <span className="flex flex-col items-start justify-start lg:pt-20">
                   <p className="font-['BreePeru-Light'] font-normal text-md lg:text-xl text-left">Es un crédito que financia el mejoramiento,</p>
@@ -76,7 +76,7 @@ export default function Home() {
             <div id="slide2" className="carousel-item grid grid-cols-1 relative w-full">
               <div className="flex flex-col text-white items-center justify-center pl-0 lg:pl-10 gap-20">
                 <div className="flex flex-row items-center justify-left pl-6 lg:pl-20 gap-4 w-full">
-                  <p className="font-normal text-2xl lg:text-6xl font-['BreePeru-Regular']">¿Qué financia?</p>
+                  <p className="font-normal text-3xl pt-20 lg:text-6xl font-['BreePeru-Regular']">¿Qué financia?</p>
                 </div>
                 <div className='grid grid-cols-1 lg:grid-cols-5 text-white items-center justify-center gap-10 lg:gap-0'>
                   <div className="flex flex-col items-center justify-center">
@@ -113,20 +113,19 @@ export default function Home() {
                   <div className="flex flex-col items-left lg:items-center justify-around gap-2">
                     <p className="font-normal font-['BreePeru-Regular'] text-2xl lg:text-5xl pb-10">Nuestros Beneficios</p>
                     <div className="flex flex-col text-white items-center justify-center pb-10">
-                      <img src="/slide3.png" alt="Vive Mejor" className="flex lg:hidden w-60 h-60 rounded-full border-white border-4" />
-                      <img src="/slide3.png" alt="Vive Mejor" className="hidden lg:flex w-100 h-100 rounded-full border-white border-4" />
+                      <img src="/slide3.png" alt="Vive Mejor" className="flex lg:hidden xl:hidden w-40 h-40 rounded-full border-white border-4" />
                     </div>
-                    <div className="font-['BreePeru-Light'] grid grid-cols-1 justify-start badge badge-outline border-0 rounded-full px-10 w-full h-20 bg-white/20 text-xs lg:text-lg">
-                      <p>Destinado a cubrir las necesidades básicas de los</p>
-                      <p>servicios de agua potable, alcantarillado e higiene.</p>
+                    <div className="font-['BreePeru-Light'] grid grid-cols-1 justify-start badge badge-outline border-0 rounded-full px-4 md:px-10 w-full h-20 bg-white/20 text-xs lg:text-lg">
+                      <p>Destinado a cubrir las necesidades básicas de los servicios de agua potable, alcantarillado e higiene.</p>
+                      {/* <p>servicios de agua potable, alcantarillado e higiene.</p> */}
                     </div>
-                    <div className="font-['BreePeru-Light'] justify-start badge badge-outline border-0 rounded-full px-10 w-full h-20 bg-white/20 text-xs lg:text-lg">Atención rápida y personalizada.</div>
-                    <div className="font-['BreePeru-Light'] justify-start badge badge-outline border-0 rounded-full px-10 w-full h-20 bg-white/20 text-xs lg:text-lg">Tasas acorde a la competencia del mercado.</div>
-                    <div className="font-['BreePeru-Light'] grid grid-cols-1 justify-start badge badge-outline border-0 rounded-full px-10 w-full h-20 bg-white/20 text-xs lg:text-lg">
-                      <p>Puedes pagar tu crédito sin ir a tiendas a través de</p>
-                      <p><b>YAPE</b>, <b>app</b> de <b>Caja Sullana</b> y <b>Homebanking</b>.</p>
+                    <div className="font-['BreePeru-Light'] justify-start badge badge-outline border-0 rounded-full px-4 md:px-10 w-full h-20 bg-white/20 text-xs lg:text-lg">Atención rápida y personalizada.</div>
+                    <div className="font-['BreePeru-Light'] justify-start badge badge-outline border-0 rounded-full px-4 md:px-10 w-full h-20 bg-white/20 text-xs lg:text-lg">Tasas acorde a la competencia del mercado.</div>
+                    <div className="font-['BreePeru-Light'] grid grid-cols-1 justify-start badge badge-outline border-0 rounded-full px-4 md:px-10 w-full h-20 bg-white/20 text-xs lg:text-lg">
+                      <p>Puedes pagar tu crédito sin ir a tiendas a través de <b>YAPE</b>, <b>app</b> de <b>Caja Sullana</b> y <b>Homebanking</b>.</p>
+                      {/* <p><b>YAPE</b>, <b>app</b> de <b>Caja Sullana</b> y <b>Homebanking</b>.</p> */}
                     </div>
-                    <div className="font-['BreePeru-Light'] justify-start badge badge-outline border-0 rounded-full px-10 w-full h-20 bg-white/20 text-xs lg:text-lg">Mejora tu calidad de vida</div>
+                    <div className="font-['BreePeru-Light'] justify-start badge badge-outline border-0 rounded-full px-4 md:px-10 w-full h-20 bg-white/20 text-xs lg:text-lg">Mejora tu calidad de vida</div>
                   </div>
                 </div>
                 <div className="flex flex-col text-white items-center justify-center pb-10">
@@ -147,7 +146,7 @@ export default function Home() {
                   <img src="/alegre.png" alt="Vive Mejor" className="flex lg:hidden rounded-full w-60 h-60 border-white border-4" />
                   <img src="/alegre.png" alt="Vive Mejor" className="hidden lg:flex rounded-full w-100 h-100 border-white border-4" />
                   <a href="https://cutt.ly/holaprestamo" target="_blank" rel="noopener noreferrer">
-                    <button type="submit" className="text-[#DD0B18] font-['BreePeru-Regular']  bg-white focus:ring-4 focus:outline-none font-medium rounded-lg text-2xl w-auto sm:w-auto px-5 py-2.5 text-center">¡INICIA AQUÍ!</button>
+                    <button type="submit" className="text-[#DD0B18] font-['BreePeru-Regular']  bg-white focus:ring-4 focus:outline-none font-medium rounded-lg text-md md:text-2xl w-auto sm:w-auto px-5 py-2.5 text-center">¡INICIA AQUÍ!</button>
                   </a>
                 </div>
               </div>
@@ -205,7 +204,7 @@ export default function Home() {
                   </div>
                   <h1 className="font-['BreePeru-Light']">¿Cuánto necesitas?</h1>
                   <div className="relative w-full z-0 my-6 group">
-                    <input type="text" id="first_name" autoComplete='false' className="font-['BreePeru-Light'] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="HASTA S/. 5.000,00" required />
+                    <input type="text" id="first_name" autoComplete='false' className="font-['BreePeru-Light'] text-center bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="HASTA S/. 5.000,00" required />
                   </div>
                   <h1 className="font-['BreePeru-Light']">¿En cuántas cuotas quieres pagar?</h1>
                   <div className="grid grid-cols-3 w-full items-center md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6 lg:gap-6 gap-2 py-6">
@@ -270,7 +269,7 @@ export default function Home() {
                 <button className="font-['BreePeru-Light'] inline-block text-gray-500 hover:text-gray-600 hover:border-gray-300 rounded-t-lg py-4 px-4 text-lg font-medium text-center border-transparent border-b-2 active" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="true">Perfil</button>
               </li>
               <li className="mr-2" role="presentation">
-                <button className="font-['BreePeru-Light'] inline-block text-gray-500 hover:text-gray-600 hover:border-gray-300 rounded-t-lg py-4 px-4 text-lg font-medium text-center border-transparent border-b-2 active:bg-red" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="true">Requisitos</button>
+                <button className="font-['BreePeru-Light'] inline-block text-gray-500 hover:text-gray-600 hover:border-gray-300 rounded-t-lg py-4 px-4 text-lg font-medium text-center border-transparent border-b-2 active:bg-red" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Requisitos</button>
               </li>
             </ul>
 
@@ -412,13 +411,32 @@ export default function Home() {
         </div>
 
         <div className="bg-white xl:hidden w-full flex flex-col items-center pb-10">
+          <div className="w-[300px] lg:w-[500px] bg-transparent flex justify-center items-center">
+            <details className="collapse w-full">
+              <summary className="m-1 font-['BreePeru-Light'] text-[#DD0B18] text-center text-xl border-b-2">Links de interés</summary>
+              <ul className="p-2 shadow menu collapse-content z-[1] rounded-box grid grid-cols-2 gap-6 justify-start items-left justify-items-left w-full">
+                <Link href="https://www.cajasullana.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">Caja Sullana</Link>
+                <Link href="https://www.sunat.gob.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">Sunat</Link>
+                <Link href="https://www.indecopi.gob.pe/indecopi" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">Indecopi</Link>
+                <Link href="https://www.fpcmac.org.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">FPCMAC</Link>
+                <Link href="https://www.afpintegra.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">AFP</Link>
+                <Link href="https://www.sbs.gob.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">SBS</Link>
+                <Link href="https://www.cofide.com.pe/COFIDE/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">COFIDE</Link>
+                <Link href="https://www.sbs.gob.pe/usuarios/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">SBS - Usuarios</Link>
+                <Link href="https://www.bcrp.gob.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">BCRP</Link>
+                <Link href="https://www.reniec.gob.pe/portal/Principal.htm" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">Reniec</Link>
+              </ul>
+            </details>
+          </div>
+        </div>
+
+        {/* <div className="bg-white xl:hidden w-full flex flex-col items-center pb-10">
           <div className="w-[300px] lg:w-[500px] bg-transparent">
-            <div tabIndex={0} className="collapse collapse-open rounded-none border-0 border-b-2 text-center justify-center">
+            <div tabIndex={0} className="collapse rounded-none border-0 border-b-2 text-center justify-center">
               <div className="collapse-title flex items-center justify-center px-10 text-xl text-[#DD0B18] font-['BreePeru-Light']">
                 <p className="text-center w-full">Links de interés</p>
               </div>
-              <div className="collapse-content relative"> 
-                <div className="grid grid-cols-2 gap-6 justify-start items-start justify-items-start w-full">
+              <div className="collapse-content relative grid grid-cols-2 gap-6 justify-start items-start justify-items-start w-full">
                   <Link href="https://www.cajasullana.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">Caja Sullana</Link>
                   <Link href="https://www.sunat.gob.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">Sunat</Link>
                   <Link href="https://www.indecopi.gob.pe/indecopi" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">Indecopi</Link>
@@ -429,11 +447,10 @@ export default function Home() {
                   <Link href="https://www.sbs.gob.pe/usuarios/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">SBS - Usuarios</Link>
                   <Link href="https://www.bcrp.gob.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">BCRP</Link>
                   <Link href="https://www.reniec.gob.pe/portal/Principal.htm" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">Reniec</Link>
-                </div>
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <WhatsAppButton />
       </main>

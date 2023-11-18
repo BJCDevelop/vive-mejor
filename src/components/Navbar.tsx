@@ -12,11 +12,11 @@ export default function Navbar() {
 
   return (
     <header className="bg-white absolute w-full">
-      <nav className="mx-10 flex w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div className="flex justify-left items-center pl-4 lg:pl-10 lg:flex-1">
+      <nav className="mx-10 flex w-7xl items-center justify-between py-6 lg:px-8" aria-label="Global">
+        <div className="flex justify-left items-center lg:pl-10 lg:flex-1">
           <Link href="/" className="">
             <span className="sr-only font-['BreePeru-Light']">Casa Sullana</span>
-            <img className="h-[80px] w-[220px]" src="/LOGO.svg" alt="Logo" />
+            <img className="h-[40px] w-[160px] lg:h-[80px] lg:w-[220px]" src="/LOGO.svg" alt="Logo" />
           </Link>
         </div>
         <div className="flex lg:hidden">
