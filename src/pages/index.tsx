@@ -281,7 +281,7 @@ export default function Home() {
             <div className="p-4 rounded-lg" id="profile" role="tabpanel" aria-labelledby="profile-tab">
               <div className="grid grid-cols-2 w-full bg-[#DD0B18] rounded-xl">
               <div className="flex flex-row border-r-[1px] border-[#00000028]">
-                <img src="/COLABORADOR-LANDING.png" alt="Colaborador" className="w-[320px] h-[540px] hidden lg:flex" />
+                <img src="/COLABORADOR-LANDING.png" alt="Colaborador" className="w-[400px] h-[540px] hidden lg:flex" />
                   <div className="flex flex-col items-center justify-evenly w-full px-10">
                     <h1 className="text-white py-10 text-sm md:text-lg lg:text-2xl xl:text-4xl font-['BreePeru-Light']">Colaborador</h1>
                     <div className="grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 gap-4 pb-4 items-center justify-center">
@@ -303,7 +303,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex flex-row-reverse border-r-[1px] border-[#00000028]">
-                  <img src="/COLABORADORA-LANDING.png" alt="Colaborador" className="w-[320px] h-[540px] hidden lg:flex" />
+                  <img src="/COLABORADORA-LANDING.png" alt="Colaborador" className="w-[400px] h-[540px] hidden lg:flex" />
                   <div className="flex flex-col items-center justify-evenly w-full px-10">
                     <h1 className="text-white text-center py-10 text-sm md:text-lg lg:text-2xl xl:text-4xl font-['BreePeru-Light']">Dueño de negocio</h1>
                     <div className="grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 gap-4 pb-4 items-center justify-center">
@@ -330,7 +330,7 @@ export default function Home() {
             <div className="p-4 rounded-xl hidden" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
               <div className="grid grid-cols-2 w-full bg-[#DD0B18] rounded-xl">
                 <div className="flex flex-row items-end border-r-[1px] border-[#00000028]">
-                  <img src="/COLABORADOR-LANDING.png" alt="Colaborador" className="w-[320px] h-[540px] hidden lg:flex" />
+                  <img src="/COLABORADOR-LANDING.png" alt="Colaborador" className="w-[400px] h-[540px] hidden lg:flex" />
                   <div className="flex flex-col items-center justify-between w-full px-10">
                     <h1 className="text-white text-center py-10 text-sm md:text-lg lg:text-2xl xl:text-4xl font-['BreePeru-Light']">Colaborador</h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 py-4 items-center justify-center gap-4">
@@ -368,7 +368,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex flex-row-reverse items-end border-r-[1px] border-[#00000028]">
-                  <img src="/COLABORADORA-LANDING.png" alt="Colaborador" className="w-[320px] h-[540px] hidden lg:flex" />
+                  <img src="/COLABORADORA-LANDING.png" alt="Colaborador" className="w-[400px] h-[540px] hidden lg:flex" />
                   <div className="flex flex-col items-center justify-between w-full px-10">
                     <h1 className="text-white text-center py-10 text-sm md:text-lg lg:text-2xl xl:text-4xl font-['BreePeru-Light']">Dueño de negocio</h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 py-4 items-center justify-center gap-4">
