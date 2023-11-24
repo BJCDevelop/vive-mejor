@@ -20,7 +20,7 @@ export default function Home() {
       <main
         className={`flex min-h-screen flex-col items-center justify-between ${inter.className}`}
       >
-        <div className="grid grid-cols-2 w-full bg-cover bg-black/20 bg-center pl-4 md:pl-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 w-full bg-cover bg-black/20 bg-center pl-4 md:pl-20">
           <div className="flex flex-col h-screen text-white items-left justify-center pl-10">
             <span className="flex flex-col lg:flex-row items-left justify-left gap-4">
               <Image src="/VIVE-MEJOR.svg" alt="Vive Mejor" width={200} height={100} />
@@ -28,7 +28,7 @@ export default function Home() {
             </span>
             <span className="flex flex-row items-center justify-left gap-4">
               <p className="font-['BreePeru-Light'] font-normal hidden text-xl lg:flex lg:text-3xl">oportunidad de mejorar</p>
-              <p className="font-['BreePeru-Light'] font-normal text-xl lg:text-3xl lg:hidden">te da la oportunidad de mejorar tu vida con un solo click</p>
+              <p className="font-['BreePeru-Light'] font-normal text-xl pr-40 md:pr-80 lg:text-3xl lg:hidden">te da la oportunidad de mejorar tu vida con un solo click</p>
             </span>
             <span className="flex flex-row items-center justify-left gap-4">
               <p className="font-['BreePeru-Light'] font-normal hidden text-xl lg:text-3xl lg:flex">tu vida con un solo clic</p>
@@ -47,20 +47,21 @@ export default function Home() {
         <div id="nosotros" className="relative bg-gradient-to-b from-black/20 to-white w-full">
           <div className="carousel w-full py-20 lg:py-40 bg-[url('/curvorojo.png')] bg-cover bg-no-repeat bg-center">
 
-            <div id="slide1" className="carousel-item flex flex-col gap-40 lg:gap-10 lg:grid lg:grid-cols-2 relative w-full justify-center px-2 lg:px-2">
-              <div className="flex flex-col text-white items-start pl-10 lg:pl-40 lg:justify-center">
+            <div id="slide1" className="carousel-item flex flex-col gap-40 lg:gap-10 lg:grid lg:grid-cols-2 relative w-full justify-left lg:justify-center px-2 lg:px-2">
+              <div className="pt-20 lg:pt-0 flex flex-col text-white items-start pl-10 lg:pl-40 lg:justify-center">
                 <span className="flex flex-row items-center justify-center gap-4">
-                  <p className="font-normal font-['BreePeru-Regular'] text-2xl lg:text-5xl">¿Qué es</p>
+                  <p className="font-normal font-['BreePeru-Regular'] text-3xl lg:text-5xl">¿Qué es</p>
                 </span>
                 <span className="flex flex-row lg:flex-row items-center justify-start">
                   <img src="/VIVE-MEJOR.svg" alt="Vive Mejor" className="flex w-[120px] h-[60px] lg:hidden" />
                   <img src="/VIVE-MEJOR.svg" alt="Vive Mejor" className="hidden w-[300px] h-[150px] lg:flex" />
-                  <p className="font-normal font-['BreePeru-Regular'] text-2xl lg:text-5xl">?</p>
+                  <p className="font-normal font-['BreePeru-Regular'] text-3xl lg:text-5xl">?</p>
                 </span>
                 <span className="flex flex-col items-start justify-start lg:pt-20">
-                  <p className="font-['BreePeru-Light'] font-normal text-md lg:text-xl text-left">Es un crédito que financia el mejoramiento,</p>
-                  <p className="font-['BreePeru-Light'] font-normal text-md lg:text-xl text-left">construcción o ampliación de los puntos</p>
-                  <p className="font-['BreePeru-Light'] font-normal text-md lg:text-xl text-left">por donde recorre el agua.</p>
+                  <p className="font-['BreePeru-Light'] font-normal text-md lg:text-xl text-left hidden lg:flex">Es un crédito que financia el mejoramiento,</p>
+                  <p className="font-['BreePeru-Light'] font-normal text-md lg:text-xl text-left hidden lg:flex">construcción o ampliación de los puntos</p>
+                  <p className="font-['BreePeru-Light'] font-normal text-md lg:text-xl text-left hidden lg:flex">por donde recorre el agua.</p>
+                  <p className="font-['BreePeru-Light'] font-normal text-xl lg:text-xl text-left lg:hidden">Es un crédito que financia el mejoramiento, construcción o ampliación de los puntos por donde recorre el agua.</p>
                 </span>
               </div>
               <div className="flex flex-col lg:h-screen text-white items-center justify-center w-full">
@@ -74,7 +75,7 @@ export default function Home() {
             </div>
 
             <div id="slide2" className="carousel-item grid grid-cols-1 relative w-full">
-              <div className="flex flex-col text-white items-center justify-center pl-0 lg:pl-10 gap-20">
+              <div className="flex flex-col text-white items-center justify-left lg:justify-center pl-0 lg:pl-10 gap-20">
                 <div className="flex flex-row items-center justify-left pl-6 lg:pl-20 gap-4 w-full">
                   <p className="font-normal text-3xl pt-20 lg:text-6xl font-['BreePeru-Regular']">¿Qué financia?</p>
                 </div>
@@ -107,25 +108,25 @@ export default function Home() {
               </div>
             </div>
 
-            <div id="slide3" className="carousel-item flex flex-col text-white relative w-full justify-center items-center gap-6">
+            <div id="slide3" className="carousel-item flex flex-col text-white relative w-full justify-left lg:justify-center items-center gap-6">
               <div className="flex flex-col-reverse lg:flex-row justify-center items-center justify-items-center px-20 lg:gap-60 w-full">
                 <div className="flex flex-col text-white items-center justify-center gap-10">
                   <div className="flex flex-col items-left lg:items-center justify-around gap-2">
-                    <p className="font-normal font-['BreePeru-Regular'] text-2xl lg:text-5xl pb-10">Nuestros Beneficios</p>
+                    <p className="font-normal font-['BreePeru-Regular'] text-3xl lg:text-5xl pb-10">Nuestros Beneficios</p>
                     <div className="flex flex-col text-white items-center justify-center pb-10">
-                      <img src="/slide3.png" alt="Vive Mejor" className="flex lg:hidden xl:hidden w-40 h-40 rounded-full border-white border-4" />
+                      <img src="/slide3.png" alt="Vive Mejor" className="flex lg:hidden xl:hidden w-60 h-60 rounded-full border-white border-4" />
                     </div>
-                    <div className="font-['BreePeru-Light'] grid grid-cols-1 justify-start badge badge-outline border-0 rounded-full px-4 md:px-10 w-full h-20 bg-white/20 text-xs lg:text-lg">
+                    <div className="font-['BreePeru-Light'] grid grid-cols-1 justify-start badge badge-outline border-0 rounded-full px-4 md:px-10 w-full h-20  text-xs lg:text-lg">
                       <p>Destinado a cubrir las necesidades básicas de los servicios de agua potable, alcantarillado e higiene.</p>
                       {/* <p>servicios de agua potable, alcantarillado e higiene.</p> */}
                     </div>
-                    <div className="font-['BreePeru-Light'] justify-start badge badge-outline border-0 rounded-full px-4 md:px-10 w-full h-20 bg-white/20 text-xs lg:text-lg">Atención rápida y personalizada.</div>
-                    <div className="font-['BreePeru-Light'] justify-start badge badge-outline border-0 rounded-full px-4 md:px-10 w-full h-20 bg-white/20 text-xs lg:text-lg">Tasas acorde a la competencia del mercado.</div>
-                    <div className="font-['BreePeru-Light'] grid grid-cols-1 justify-start badge badge-outline border-0 rounded-full px-4 md:px-10 w-full h-20 bg-white/20 text-xs lg:text-lg">
+                    <div className="font-['BreePeru-Light'] justify-start badge badge-outline border-0 rounded-full px-4 md:px-10 w-full h-20  text-xs lg:text-lg">Atención rápida y personalizada.</div>
+                    <div className="font-['BreePeru-Light'] justify-start badge badge-outline border-0 rounded-full px-4 md:px-10 w-full h-20  text-xs lg:text-lg">Tasas acorde a la competencia del mercado.</div>
+                    <div className="font-['BreePeru-Light'] grid grid-cols-1 justify-start badge badge-outline border-0 rounded-full px-4 md:px-10 w-full h-20  text-xs lg:text-lg">
                       <p>Puedes pagar tu crédito sin ir a tiendas a través de <b>YAPE</b>, <b>app</b> de <b>Caja Sullana</b> y <b>Homebanking</b>.</p>
                       {/* <p><b>YAPE</b>, <b>app</b> de <b>Caja Sullana</b> y <b>Homebanking</b>.</p> */}
                     </div>
-                    <div className="font-['BreePeru-Light'] justify-start badge badge-outline border-0 rounded-full px-4 md:px-10 w-full h-20 bg-white/20 text-xs lg:text-lg">Mejora tu calidad de vida</div>
+                    <div className="font-['BreePeru-Light'] justify-start badge badge-outline border-0 rounded-full px-4 md:px-10 w-full h-20  text-xs lg:text-lg">Mejora tu calidad de vida</div>
                   </div>
                 </div>
                 <div className="flex flex-col text-white items-center justify-center pb-10">
@@ -138,10 +139,10 @@ export default function Home() {
               </div>
             </div>
 
-            <div id="slide4" className="carousel-item flex flex-col gap-10 lg:grid lg:grid-cols-2 items-center justify-center relative w-full">
-              <p className="text-white w-full lg:hidden pl-10 md:pl-20 lg:pl-0 font-normal text-left font-['BreePeru-Regular'] text-2xl lg:text-5xl">¿Cómo puedo obtenerlo?</p>
+            <div id="slide4" className="carousel-item flex flex-col gap-10 lg:grid lg:grid-cols-2 items-center justify-left lg:justify-center pt-20 lg:pt-0 relative w-full">
+              <p className="text-white w-full lg:hidden pl-10 md:pl-20 lg:pl-0 font-normal text-left font-['BreePeru-Regular'] text-3xl lg:text-5xl">¿Cómo puedo obtenerlo?</p>
               <div className="flex flex-col text-white items-left lg:px-40 justify-start gap-6 lg:gap-20">
-                <p className="text-white hidden lg:flex pl-10 md:pl-20 lg:pl-0 font-normal text-left font-['BreePeru-Regular'] text-2xl lg:text-5xl">¿Cómo puedo obtenerlo?</p>
+                <p className="text-white hidden lg:flex pl-10 md:pl-20 lg:pl-0 font-normal text-left font-['BreePeru-Regular'] text-3xl lg:text-5xl">¿Cómo puedo obtenerlo?</p>
                 <div className="flex flex-col items-center justify-center gap-6 pt-10">
                   <img src="/alegre.png" alt="Vive Mejor" className="flex lg:hidden rounded-full w-60 h-60 border-white border-4" />
                   <img src="/alegre.png" alt="Vive Mejor" className="hidden lg:flex rounded-full w-100 h-100 border-white border-4" />
@@ -202,11 +203,11 @@ export default function Home() {
                       <input type="fullname" name="floating_fullname" autoComplete='false' id="font-['BreePeru-Light'] floating_fullname" className="block py-2.5 px-0 w-full text-sm text-white bg-transparent border-0 border-b-2 border-gray-300 appearance-none  focus:outline-none focus:ring-0 focus:border-white peer" placeholder=" " required />
                       <label htmlFor="floating_fullname" className="ml-[-50px] font-['BreePeru-Light'] peer-focus:font-medium peer-focus:ml-0 absolute text-sm text-white duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Nombre Completo</label>
                   </div>
-                  <h1 className="font-['BreePeru-Light']">¿Cuánto necesitas?</h1>
+                  <h1 className="font-['BreePeru-Light'] text-center">¿Cuánto necesitas?</h1>
                   <div className="relative w-full z-0 my-6 group">
                     <input type="text" id="first_name" autoComplete='false' className="font-['BreePeru-Light'] text-center bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="HASTA S/. 5.000,00" required />
                   </div>
-                  <h1 className="font-['BreePeru-Light']">¿En cuántas cuotas quieres pagar?</h1>
+                  <h1 className="font-['BreePeru-Light'] text-center">¿En cuántas cuotas quieres pagar?</h1>
                   <div className="grid grid-cols-3 w-full items-center md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6 lg:gap-6 gap-2 py-6">
                     <div className="flex items-center justify-center">
                     <button type='button' className="btn btn-square btn-outline text-black focus:text-black font-['BeerPeru-Light] bg-white border-0 hover:bg-[#FFFCE0] focus:bg-[#FFFCE0]">
@@ -277,7 +278,7 @@ export default function Home() {
 
           <div id="myTabContent">
 
-            <div className="p-4 rounded-lg hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div className="p-4 rounded-lg" id="profile" role="tabpanel" aria-labelledby="profile-tab">
               <div className="grid grid-cols-2 w-full bg-[#DD0B18] rounded-xl">
               <div className="flex flex-row border-r-[1px] border-[#00000028]">
                 <img src="/COLABORADOR-LANDING.png" alt="Colaborador" className="w-[320px] h-[540px] hidden lg:flex" />
@@ -326,12 +327,12 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="p-4 rounded-xl" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+            <div className="p-4 rounded-xl hidden" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
               <div className="grid grid-cols-2 w-full bg-[#DD0B18] rounded-xl">
                 <div className="flex flex-row items-end border-r-[1px] border-[#00000028]">
                   <img src="/COLABORADOR-LANDING.png" alt="Colaborador" className="w-[320px] h-[540px] hidden lg:flex" />
                   <div className="flex flex-col items-center justify-between w-full px-10">
-                    <h1 className="text-white py-10 text-sm md:text-lg lg:text-2xl xl:text-4xl font-['BreePeru-Light']">Colaborador</h1>
+                    <h1 className="text-white text-center py-10 text-sm md:text-lg lg:text-2xl xl:text-4xl font-['BreePeru-Light']">Colaborador</h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 py-4 items-center justify-center gap-4">
                       <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/requisitos/id.svg" alt="Id" width={50} height={50} />
@@ -369,7 +370,7 @@ export default function Home() {
                 <div className="flex flex-row-reverse items-end border-r-[1px] border-[#00000028]">
                   <img src="/COLABORADORA-LANDING.png" alt="Colaborador" className="w-[320px] h-[540px] hidden lg:flex" />
                   <div className="flex flex-col items-center justify-between w-full px-10">
-                    <h1 className="text-white py-10 text-sm md:text-lg lg:text-2xl xl:text-4xl font-['BreePeru-Light']">Dueño de negocio</h1>
+                    <h1 className="text-white text-center py-10 text-sm md:text-lg lg:text-2xl xl:text-4xl font-['BreePeru-Light']">Dueño de negocio</h1>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 py-4 items-center justify-center gap-4">
                       <div className="flex flex-col text-center items-center justify-center">
                         <Image src="/requisitos/id.svg" alt="Id" width={50} height={50} />
@@ -408,25 +409,24 @@ export default function Home() {
             </div>
 
           </div>
-        </div>
-
-        <div className="bg-white xl:hidden w-full flex flex-col items-center pb-10">
-          <div className="w-[300px] lg:w-[500px] bg-transparent flex justify-center items-center">
-            <details className="collapse w-full">
-              <summary className="m-1 font-['BreePeru-Light'] text-[#DD0B18] text-center text-xl border-b-2">Links de interés</summary>
-              <ul className="p-2 shadow menu collapse-content z-[1] rounded-box grid grid-cols-2 gap-6 justify-start items-left justify-items-left w-full">
-                <Link href="https://www.cajasullana.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">Caja Sullana</Link>
-                <Link href="https://www.sunat.gob.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">Sunat</Link>
-                <Link href="https://www.indecopi.gob.pe/indecopi" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">Indecopi</Link>
-                <Link href="https://www.fpcmac.org.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">FPCMAC</Link>
-                <Link href="https://www.afpintegra.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">AFP</Link>
-                <Link href="https://www.sbs.gob.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">SBS</Link>
-                <Link href="https://www.cofide.com.pe/COFIDE/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">COFIDE</Link>
-                <Link href="https://www.sbs.gob.pe/usuarios/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">SBS - Usuarios</Link>
-                <Link href="https://www.bcrp.gob.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">BCRP</Link>
-                <Link href="https://www.reniec.gob.pe/portal/Principal.htm" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">Reniec</Link>
-              </ul>
-            </details>
+          <div className="bg-white pt-20 border-0 xl:hidden w-full flex flex-col items-center">
+            <div className="w-[300px] lg:w-[500px] bg-transparent flex justify-center items-center">
+              <details className="collapse w-full">
+                <summary className="m-1 font-['BreePeru-Light'] text-[#DD0B18] text-center text-xl border-b-2">Links de interés</summary>
+                <ul className="p-2 shadow menu collapse-content z-[1] rounded-box grid grid-cols-2 gap-6 justify-start items-left justify-items-left w-full">
+                  <Link href="https://webcs-innovacion.cajasullana.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">Caja Sullana</Link>
+                  <Link href="https://www.sunat.gob.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">Sunat</Link>
+                  <Link href="https://www.indecopi.gob.pe/indecopi" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">Indecopi</Link>
+                  <Link href="https://www.fpcmac.org.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">FPCMAC</Link>
+                  <Link href="https://www.afpintegra.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">AFP</Link>
+                  <Link href="https://www.sbs.gob.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">SBS</Link>
+                  <Link href="https://www.cofide.com.pe/COFIDE/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">COFIDE</Link>
+                  <Link href="https://www.sbs.gob.pe/usuarios/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">SBS - Usuarios</Link>
+                  <Link href="https://www.bcrp.gob.pe/" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">BCRP</Link>
+                  <Link href="https://www.reniec.gob.pe/portal/Principal.htm" target="_blank" rel="noopener noreferrer" className="text-[#DD0B18] font-['BreePeru-Light'] -m-1.5 p-1.5">Reniec</Link>
+                </ul>
+              </details>
+            </div>
           </div>
         </div>
 
