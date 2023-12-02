@@ -14,6 +14,43 @@ export default function Home() {
 
   const [resolve, setResolve] = useState(false)
 
+  const [dni, setDni] = useState('')
+  const [phone, setPhone] = useState('')
+  const [fullname, setFullname] = useState('')
+  const [amount, setAmount] = useState(0)
+  const [cuotas, setCuotas] = useState('')
+
+  const handleSubmit = async () => {
+    const data = {
+      dni,
+      phone,
+      fullname,
+      amount,
+      cuotas
+    }
+
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    }).then((res) => {
+      console.log('Response received')
+      if (res.status === 200) {
+        console.log('Response succeeded!')
+        setResolve(true)
+        setDni('')
+        setPhone('')
+        setFullname('')
+        setAmount(0)
+        setCuotas('')
+      }
+    })
+    setResolve(true)
+  }
+
   return (
     <>
       <Navbar />
