@@ -242,7 +242,22 @@ export default function Home() {
                   </div>
                   <h1 className="font-['BreePeru-Light'] text-center">¿Cuánto necesitas?</h1>
                   <div className="relative w-full z-0 my-6 group">
-                    <input type="text" id="first_name" autoComplete='false' className="font-['BreePeru-Light'] text-center bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="HASTA S/. 5.000,00" required />
+                    <input 
+                      type="number" 
+                      onInput={(e) => {
+                          const target = e.target as HTMLInputElement;
+                          if (Number(target.value) > 5000) {
+                              target.value = '5000';
+                              alert("El valor no puede ser mayor a 5000");
+                          }
+                          setAmount(Number(target.value));
+                      }} 
+                      id="first_name" 
+                      autoComplete='false' 
+                      className="font-['BreePeru-Light'] text-center bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" 
+                      placeholder="HASTA S/. 5.000,00" 
+                      required 
+                    />
                   </div>
                   <h1 className="font-['BreePeru-Light'] text-center">¿En cuántas cuotas quieres pagar?</h1>
                   <div className="grid grid-cols-3 w-full items-center md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6 lg:gap-6 gap-2 py-6">
@@ -279,7 +294,19 @@ export default function Home() {
                     
                   </div>
                   
-                  <button type="submit" onClick={() => setResolve(true)} className="font-['BreePeru-Light'] text-[#DD0B18] bg-[#FAC300] focus:ring-4 focus:outline-none font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">CONSULTAR</button>
+                  <button
+                    type="submit" 
+                    onClick={() => {
+                        if (amount > 5000) {
+                            alert("El valor no puede ser mayor a 5000");
+                            return;
+                        }
+                        handleSubmit();
+                    }}
+                    className="font-['BreePeru-Light'] text-[#DD0B18] bg-[#FAC300] focus:ring-4 focus:outline-none font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+                  >
+                    CONSULTAR
+                  </button>
                 </div>
               </div>
             )}
