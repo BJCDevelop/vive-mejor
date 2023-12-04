@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 const WhatsAppButton = () => {
-  const [href, setHref] = useState("http://mst.pe/CajaSullanaWhatsApp");
+  const [href, setHref] = useState("https://wa.link/tsddom");
 
   return (
     <Link
