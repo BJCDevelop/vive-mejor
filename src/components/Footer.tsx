@@ -46,7 +46,7 @@ export default function Footer() {
                         <Image className="h-8 w-auto" src="/IG.svg" alt="Logo" width={50} height={50} />
                     </Link>
                 </div>
-                <Link href="/" target="_blank" rel="noopener noreferrer" className="-m-1.5 p-1.5">
+                <Link href="https://www.cajasullana.pe/cmac-web/#/reclamos/home" target="_blank" rel="noopener noreferrer" className="-m-1.5 p-1.5">
                     <Image className="w-auto" src="/LIBRO.svg" alt="Logo" width={200} height={100} />
                 </Link>
             </div>
